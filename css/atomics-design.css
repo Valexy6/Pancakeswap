@@ -85,6 +85,22 @@ h3 {
   height: 60px;
 }
 
+.secondary {
+  grid-column: 13;
+  grid-row: 2;
+}
+
+.box6 {
+  grid-row: 3;
+  grid-column: 13 / 14;
+}
+
+.footer-yellow {
+  background-color: rgb(255, 178, 55);
+  width: 120px;
+  height: 60px;
+}
+
 .design-box2 {
   display: grid;
   grid-template-columns: repeat(24 , 1fr);
