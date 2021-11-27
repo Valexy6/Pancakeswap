@@ -10,27 +10,88 @@ main {
   padding: 2rem;
   background-color: rgb(215, 202, 236);
   min-height: 100vh;
+  line-height: 1;
 }
 
-.titles {
+.sec-titles {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-/* -- box dei form fields -- */
-.form-fields {
-  padding: 2rem;
-  border: 1px solid rgb(40, 13, 95);
-  background-color: white;
-}
-
-.form-fields div {
+.titles {
+  font-size: 1rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
-/* -- search field -- */
+.sub-titles {
+  font-size: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.bcg-dark {
+  background-color: rgb(39, 38, 44);
+  width: fit-content;
+  padding: 0.5rem;
+}
+
+/* -- container -- */
+.container {
+  padding: 2rem;
+  border: 1px solid rgb(40, 13, 95);
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.container div {
+  margin-bottom: 1rem;
+  min-width: 30%;
+}
+
+.container-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+}
+
+/* -- logos -- */
+/* eyes animation */
+.logo-container:hover .left-eye,
+.logo-container:hover .right-eye {
+  transform-origin: center 60%;
+  animation-name: eyes;
+  animation-duration: 350ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes eyes {
+  0%, 100% { transform: scaleY(1);}
+  50% { transform: scaleY(0.1);}
+
+}
+
+/* eyes hover no animation */
+.logo-container-h  .left-eye,
+.logo-container-h  .right-eye {
+  transform: scaleY(1);
+  transform: scaleY(0.1);
+}
+
+/* logo desktop */
+.desktop-logo {
+  width: 160px;
+}
+
+/* logo mobile */
+.mobile-logo {
+  width: 32px;
+}
+
+/* -- inputs -- */
+/* search field */
 .search-field {
   border: 1px solid rgb(215, 202, 236);
+  outline: 0px;
   border-radius: 16px;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   background-color: rgb(238, 234, 244);
@@ -43,4 +104,130 @@ main {
 
 .search-field::placeholder {
   color: rgb(122, 110, 170);
+}
+
+/* sort by field*/
+.sort-by-field {
+  border: 1px solid rgb(215, 202, 236);
+  outline: 0px;
+  border-radius: 16px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: rgb(238, 234, 244);
+  color: rgb(122, 110, 170);
+  font-size: 1rem;
+  height: 40px;
+  width: fit-content; /* width change to 100% when in his layout div */
+  padding: 0px 16px;
+  font-family: Kanit, sans-serif;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media screen and (min-width: 576px) {
+  .sort-by-field {
+    min-width: 168px;
+  }
+}
+
+/* general inputs */
+.general-field {
+  border: 1px solid rgb(215, 202, 236);
+  outline: 0px;
+  border-radius: 16px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: rgb(238, 234, 244);
+  color: rgb(40, 13, 95);
+  font-size: 1rem;
+  height: 100%;
+  width: 60px;
+  padding: 4px 16px;
+  font-family: Kanit, sans-serif;
+  text-align: center;
+}
+
+/* general inputs big*/
+.general-field-big-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.75rem 1rem 1.5rem 1rem;
+  border-radius: 16px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: rgb(238, 234, 244);
+  color: rgb(40, 13, 95);
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+  font-family: Kanit, sans-serif;
+  text-align: center;
+}
+
+.general-field-big {
+  outline: none;
+  border: none;
+  flex: 1 1 auto;
+  font-family: Kanit, sans-serif;
+  text-align: right;
+  color: rgb(40, 13, 95);
+  font-weight: 500;
+  background-color: transparent;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px;
+}
+
+.general-field-big::placeholder {
+  color: rgb(122, 110, 170);
+}
+
+/* field focus */
+.focus {
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px !important;
+}
+
+/* radio input */
+.radio-label {
+  cursor: pointer;
+  margin-right: 1rem;
+  color: rgb(40, 13, 95);
+  font-family: Kanit, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: 8px;
+}
+
+.radio-input {
+  cursor: pointer;
+  overflow: hidden;
+  appearance: none;
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  border: 0px;
+  border-radius: 50%;
+  background-color: rgb(238, 234, 244);
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  margin: 0px;
+  position: relative;
+  transition: background-color 0.2s ease-in-out 0s;
+}
+
+.radio-input:checked {
+  background-color: rgb(49, 208, 170);
+}
+
+.radio-input:checked::after {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  height: 12px;  
+  width: 12px;
+  position: absolute;
+  left: 6px;
+  top: 6px;
 }
