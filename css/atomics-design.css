@@ -14,7 +14,7 @@ body {
 .design-box {
   display: grid;
   grid-template-columns: repeat(24 , 1fr);
-  grid-template-rows: repeat(8 , 1fr);
+  grid-template-rows: repeat(3 , 1fr);
   background-color: white;
   height: 38vh;
   border: black solid 1px;
@@ -104,7 +104,7 @@ h3 {
 .design-box2 {
   display: grid;
   grid-template-columns: repeat(24 , 1fr);
-  grid-template-rows: repeat(8 , 1fr);
+  grid-template-rows: repeat(3 , 1fr);
   height: 51vh;
   background-color: white;
   margin-top: 0.8rem;
