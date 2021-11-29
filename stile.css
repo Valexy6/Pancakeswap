@@ -18,6 +18,9 @@
   }
   
   .components {
+   display: grid;
+   grid-template-columns: 4;
+   grid-template-rows: 1fr;
    padding: 2rem;
    border: 1px solid rgb(40, 13, 95);
    background-color: rgb(207, 141, 141);
@@ -28,6 +31,7 @@
   }
   
   .card {
+   grid-template-columns: 1;
    height: 280px;
    width: 280px;
    background-color: white;
@@ -73,6 +77,7 @@
   line-height: 1.5; 
   padding-top: 30px;
 }
+
 
 
   
