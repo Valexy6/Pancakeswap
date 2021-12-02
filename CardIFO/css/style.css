@@ -1,0 +1,147 @@
+:root {
+    --robins-color: #1fc7d4;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit";
+}
+
+body {
+    background-color: blueviolet;
+}
+
+main {
+    max-width: 325px;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: rgb(238, 234, 244) 0px 0px 5px inset;
+
+}
+
+.head {
+    min-height: 78px;
+    background: linear-gradient(rgb(167, 232, 241) 0%, rgb(148, 225, 242) 100%);
+    border-radius: 24px 24px 0px 0px;
+    padding: 24px;
+}
+
+.containerHead {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(40, 13, 95);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+.title {
+    margin-right: 166px;
+
+}
+
+.middlePart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bunnyQuestionM {
+    padding-top: 24px;
+    padding-bottom: 12px;
+
+
+}
+
+.textMiddle p {
+    margin-bottom: 23px;
+}
+
+.theButton {
+    margin-bottom: 30px;
+}
+
+.theButton button {
+    border-radius: 16px;
+    border: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--robins-color);
+    color: white;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    width: 277px;
+    height: 48px;
+    opacity: 1;
+}
+
+.finalPart {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+.firstLine {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: rgb(122, 110, 170);
+    margin-bottom: 3px;
+
+}
+
+.secondLine {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: rgb(122, 110, 170);
+    margin-bottom: 3px;
+
+
+}
+
+.thirdLine {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: rgb(122, 110, 170);
+    margin-bottom: 3px;
+
+
+}
+
+.fourthLine {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: rgb(122, 110, 170);
+    margin-bottom: 48px;
+
+
+}
+
+.firstText {
+    margin-right: 102px;
+}
+
+.secondText {
+    margin-right: 24px;
+}
+
+.thirdText {
+    margin-right: 126px;
+}
+
+.fourthText {
+    margin-right: 141px;
+}
