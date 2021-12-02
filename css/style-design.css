@@ -341,6 +341,10 @@ transform-origin: center top;
   color: rgb(31, 199, 212);
 }
 
+.card-l-column2 a:hover {
+  opacity: 0.65;
+}
+
 .card-l-column2 div:last-child {
   display: inline-flex;
   align-items: center;
