@@ -1,0 +1,388 @@
+/* -- generic -- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: inherit;
+}
+
+main {
+  padding: 2rem;
+  background-color: rgb(215, 202, 236);
+  min-height: 100vh;
+  line-height: 1;
+  font-family: "Roboto";
+}
+
+.sec-titles {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.titles {
+  font-size: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.sub-titles {
+  font-size: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.bcg-dark {
+  background-color: rgb(39, 38, 44);
+  width: fit-content;
+  padding: 0.5rem;
+}
+
+/* -- container -- */
+.container {
+  padding: 2rem;
+  border: 1px solid rgb(40, 13, 95);
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.box {
+  margin-bottom: 1rem;
+  min-width: 30%;
+}
+
+.container-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+}
+
+/* -- logos -- */
+/* eyes animation */
+.logo-container:hover .left-eye,
+.logo-container:hover .right-eye {
+  transform-origin: center 60%;
+  animation-name: eyes;
+  animation-duration: 350ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes eyes {
+  0%, 100% { transform: scaleY(1);}
+  50% { transform: scaleY(0.1);}
+}
+
+/* logo desktop */
+.desktop-logo {
+  width: 160px;
+}
+
+/* logo mobile */
+.mobile-logo {
+  width: 32px;
+}
+
+/* -- inputs -- */
+/* search field */
+.search-field {
+  border: 1px solid rgb(215, 202, 236);
+  outline: 0px;
+  border-radius: 16px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: rgb(238, 234, 244);
+  color: rgb(122, 110, 170);
+  font-size: 1rem;
+  height: 40px;
+  padding: 0px 16px;
+  font-family: Kanit, sans-serif;
+}
+
+.search-field::placeholder {
+  color: rgb(122, 110, 170);
+}
+
+.search-field:focus {
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+/* radio input */
+.radio-label {
+  cursor: pointer;
+  margin-right: 1rem;
+  color: rgb(40, 13, 95);
+  font-family: Kanit, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: 8px;
+}
+
+.radio-input {
+  cursor: pointer;
+  overflow: hidden;
+  appearance: none;
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  border: 0px;
+  border-radius: 50%;
+  background-color: rgb(238, 234, 244);
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  margin: 0px;
+  position: relative;
+  transition: background-color 0.2s ease-in-out 0s;
+}
+
+.radio-input:checked {
+  background-color: rgb(49, 208, 170);
+}
+
+.radio-input:checked::after {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  height: 12px;  
+  width: 12px;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+}
+
+/* general inputs */
+.general-field {
+  border: 1px solid rgb(215, 202, 236);
+  outline: 0px;
+  border-radius: 16px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: rgb(238, 234, 244);
+  color: rgb(40, 13, 95);
+  font-size: 1rem;
+  height: 100%;
+  width: 60px;
+  padding: 4px 16px;
+  font-family: Kanit, sans-serif;
+  text-align: center;
+}
+
+.general-field:focus {
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+/* general inputs big*/
+.general-field-big-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.75rem 1rem 1.5rem 1rem;
+  border-radius: 16px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: rgb(238, 234, 244);
+  color: rgb(40, 13, 95);
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+  font-family: Kanit, sans-serif;
+  text-align: center;
+}
+
+.general-field-big {
+  outline: none;
+  border: none;
+  flex: 1 1 auto;
+  font-family: Kanit, sans-serif;
+  text-align: right;
+  color: rgb(40, 13, 95);
+  font-weight: 500;
+  background-color: transparent;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px;
+}
+
+.general-field-big::placeholder {
+  color: rgb(122, 110, 170);
+}
+
+
+/* -- Components -- */
+/* sort by field */
+.sort-by-container {
+  cursor: pointer;
+  width: 10rem; /* width change to 100% when in his layout div */
+  height: 40px;
+  position: relative;
+  background-color: rgb(238, 234, 244);
+  border-radius: 16px;
+  border: 1px solid rgb(215, 202, 236);
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  outline: none;
+  color: rgb(40, 13, 95);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Kanit, sans-serif;
+}
+
+.sort-by-head {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.sort-by-list {
+  height: auto; /*chenge to auto when display*/
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  background-color: rgb(238, 234, 244);
+  border: 1px solid rgb(215, 202, 236);
+  border-radius: 0 0 16px 16px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px, rgb(14 14 44 / 10%) 0px 4px 12px -8px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.sort-by-list li {
+  list-style-type: none;
+  padding: 8px 16px;
+  margin: 0px;
+  line-height: 1.5;
+}
+/*
+transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+transform: scaleY(0);
+transform-origin: center top;
+opacity: 0;
+transform-origin: center top;
+*/
+
+
+@media screen and (min-width: 576px) {
+  .sort-by-field {
+    min-width: 168px;
+  }
+}
+
+/* card leadboard */
+.card-leadboard {
+  background-color: rgb(231, 227, 235);
+  border-radius: 24px;
+  padding: 1px 1px 3px;
+  max-width: 1150px; /*remove when in is container/layout*/
+}
+
+.fake-border {
+  border-radius: 24px;
+  color:rgb(40, 13, 95);
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  font-family: Kanit, sans-serif;
+  display: flex;
+  max-width: 1150px; /*remove when in is container/layout*/
+}
+
+.card-l-column1 {
+  background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(239, 244, 245) 46.87%, rgb(243, 239, 255) 100%);
+  padding: 16px;
+  text-align: center;
+  width: 56px;
+}
+
+.card-l-column2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px;
+}
+
+.card-l-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-l-info div {
+  display: flex;
+  align-items: center;
+  vertical-align: baseline;
+}
+
+.card-l-info svg {
+  fill: rgb(40, 13, 95);
+  margin-right: 8px;
+}
+
+.card-l-column2 a {
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 16px;
+  font-family: Kanit, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  outline: 0;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 32px;
+  padding: 0px 16px;
+  background-color: transparent;
+  border: 2px solid rgb(31, 199, 212);
+  color: rgb(31, 199, 212);
+}
+
+.card-l-column2 a:hover {
+  opacity: 0.65;
+}
+
+.card-l-column2 div:last-child {
+  display: inline-flex;
+  align-items: center;
+}
+
+.team-members {
+  margin-left: 24px;
+}
+
+.leadboard-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 24px;
+}
+
+/* typography */
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  color:rgb(40, 13, 95);
+  vertical-align: baseline;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-l-column1 p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color:rgb(40, 13, 95);
+}
+
+.card-l-info p {
+  font-size: 1rem;
+  color: rgb(122, 110, 170);
+  margin-right: 24px;
+}
