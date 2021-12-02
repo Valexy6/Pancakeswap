@@ -1,69 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Document</title>
-  <link rel="stylesheet" href="css/atomics-design.css" type="text/css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilis.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Kanit" />
+    <title>Atomic Design System</title>
 </head>
+
 <body>
-  <section class="design-box">
-    <h1>Brand Colors</h1>
-    <h3>Primary</h3>
-    <div class="box1">
-      <div class="background-color"></div>
-      <p>Background Color</p>
-    </div>
-    
+    <main>
+        <!--giuseppe-->
+        <section class="design-box">
+            <h1>Brand Colors</h1>
+            <h3>Primary</h3>
+            <div class="box1">
+              <div class="background-color"></div>
+              <p>Background Color</p>
+            </div>
+            
+        
+            <div class="box2">
+              <div class="section-title"></div>
+              <p>Section Title</p>
+            </div>
+        
+            <div class="box3">
+              <div class="section-subtitle"></div>
+              <p>Section Subtitle</p>
+            </div>
+        
+            <div class="box4">
+              <div class="section-paragraph"></div>
+              <p>Paragraph</p>
+            </div>
+        
+            <div class="box5">
+              <div class="button-color"></div>
+              <p>Button Color</p>
+            </div>
+        
+            <h3 class="secondary">Secondary</h3>
+        
+            <div class="box6">
+              <div class="footer-yellow"></div>
+              <p>Yellow Footer</p>
+        
+              <div class="box7">
+                <div class="gradient"></div>
+                <p>Gradient</p>
+            </div>
+        
+          </section>
+        
+          <section class="design-box2">
+            <h1>Typography</h1>
+        
+            <div class="navbar"> <h4>Scritte</h4> Kanit <br> 16px</div>
+        
+            <div class="h1"> <h4>H1</h4> Kanit <br> 64px</div>
+        
+            <div class="h2"> <h4>H2</h4> Kanit <br> 40px</div>
+        
+            <div class="h3"> <h4>H3</h4> Kanit <br> 20px</div>
+        
+            <div class="slide"> <h3>Slide</h3> Kanit <br> 12px</div>
+          </section>
 
-    <div class="box2">
-      <div class="section-title"></div>
-      <p>Section Title</p>
-    </div>
 
-    <div class="box3">
-      <div class="section-subtitle"></div>
-      <p>Section Subtitle</p>
-    </div>
+        <!--valerio-->
+        <div class="wrapperBox">
 
-    <div class="box4">
-      <div class="section-paragraph"></div>
-      <p>Paragraph</p>
-    </div>
+            <h2 class="title">Button Styles</h2>
 
-    <div class="box5">
-      <div class="button-color"></div>
-      <p>Button Color</p>
-    </div>
+            <div class="wrapperButton">
 
-    <h3 class="secondary">Secondary</h3>
+                <div class="elementsStandard">
 
-    <div class="box6">
-      <div class="footer-yellow"></div>
-      <p>Yellow Footer</p>
+                    <div class="text">
+                        <p>Standard button<p>
+                    </div>
+                    <div>
+                        <button class="buttonStandard">Connect Wallet</button>
+                    </div>
+                </div>
+                <div class="elementsLarge">
 
-      <div class="box7">
-        <div class="gradient"></div>
-        <p>Gradient</p>
-    </div>
+                    <div class="text">
+                        <p>Large button</p>
+                    </div>
+                    <div>
+                        <button class="buttonLarge">
+                            <div>Play</div>
+                            <img src="assets/icons/row.svg" />
+                        </button>
+                    </div>
+                </div>
 
-  </section>
+                <div class="elementsMedium">
+                    <div class="text">
+                        <p>Medium button</p>
+                    </div>
+                    <div>
+                        <button class="buttonMedium">Trade Now</button>
+                    </div>
+                </div>
 
-  <section class="design-box2">
-    <h1>Typography</h1>
+                <div class="elementsSmall">
+                    <div class="text">
+                        <p>Small button</p>
+                    </div>
+                    <div>
+                        <button class="buttonSmall">Explore</button>
+                    </div>
+                </div>
 
-    <div class="navbar"> <h4>Scritte</h4> Kanit <br> 16px</div>
+                <div class="elementsSquashed">
+                    <div class="text">
+                        <p>Squashed button</p>
+                    </div>
+                    <div>
+                        <button class="buttonSquashed">Buy CAKE</button>
+                    </div>
+                </div>
 
-    <div class="h1"> <h4>H1</h4> Kanit <br> 64px</div>
+            </div>
 
-    <div class="h2"> <h4>H2</h4> Kanit <br> 40px</div>
+            <div class="elementsGear">
+                <div class="text">
+                    <p>Gear button</p>
+                </div>
+                <div>
+                    <button class="buttonGear"><img src="assets/icons/gear.svg"></button>
+                </div>
+            </div>
 
-    <div class="h3"> <h4>H3</h4> Kanit <br> 20px</div>
+            <div class="elementsLanguage">
+                <div class="text">
+                    <p>Language button</p>
+                </div>
+                <div>
+                    <button class="buttonLanguage"><img src="assets/icons/language.svg" /></button>
+                </div>
+            </div>
+        </div>
+        </div>
 
-    <div class="slide"> <h3>Slide</h3> Kanit <br> 12px</div>
-  </section>
-  
+
+
+
+        <div class="wrapperBox2">
+
+            <h2 class="title-icons">Icons</h2>
+
+            <div class="wrapperIcons">
+                <div class="gear">
+                    <img src="assets/icons/gear.svg" />
+                </div>
+                <div class="language">
+                    <img src="assets/icons/language.svg" />
+                </div>
+                <div class="prediction">
+                    <img src="assets/icons/prediction.svg" />
+                </div>
+                <div class="lottery">
+                    <img src="assets/icons/lottery.svg" />
+                </div>
+                <div class="users">
+                    <img src="assets/icons/users.svg" />
+                </div>
+                <div class="trades">
+                    <img src="assets/icons/trades.svg" />
+                </div>
+                <div class="staked">
+                    <img src="assets/icons/staked.svg" />
+                </div>
+                <div class="bunny">
+                    <img src="assets/icons/bunny.svg" />
+                </div>
+
+                <div class="pancakes">
+                    <img src="assets/icons/pancakes.svg">
+                </div>
+                <div class="twitter">
+                    <img src="assets/icons/twitter.svg" />
+                </div>
+                <div class="telegram">
+                    <img src="assets/icons/telegram.svg" />
+                </div>
+                <div class="reddit">
+                    <img src="assets/icons/reddit.svg" />
+                </div>
+                <div class="instagram">
+                    <img src="assets/icons/instagram.svg" />
+                </div>
+                <div class="github">
+                    <img src="assets/icons/github.svg" />
+                </div>
+                <div class="discord">
+                    <img src="assets/icons/discord.svg" />
+                </div>
+            </div>
+
+
+
+
+    </main>
+
+
 </body>
 </html>
