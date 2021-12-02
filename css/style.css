@@ -33,7 +33,6 @@ main {
     background-color: white;
     display: flex;
     flex-direction: column;
-
 }
 
 /* contenitore del box contenente tutti i bottoni */
@@ -93,14 +92,11 @@ main {
     align-items: center;
 }
 
-
-
 .buttonStandard {
     border-radius: 16px;
     border: 0px;
     font-size: 16px;
     font-weight: 600;
-    height: 48px;
     background-color: var(--robins-color);
     color: white;
     box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
@@ -115,56 +111,12 @@ main {
 
 .buttonStandard:hover {
     background-color: rgb(31, 199, 212, 0.65);
-
 }
 
 .buttonStandard:active {
     background-color: rgb(31, 199, 212, 0.85);
     transform: translateY(1px);
     box-shadow: none;
-
-}
-
-.buttonStandardHover {
-    border-radius: 16px;
-    border: 0px;
-    font-size: 16px;
-    font-weight: 600;
-    height: 48px;
-    background-color: var(--robins-color);
-    color: white;
-    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-    cursor: var(--pointer);
-    letter-spacing: 0.03em;
-    line-height: 1;
-    width: 165px;
-    height: 48px;
-    opacity: 0.65;
-    margin-top: var(--margin-top);
-}
-
-.buttonStandardActive {
-    border-radius: 16px;
-    border: 0px;
-    font-size: 16px;
-    font-weight: 600;
-    height: 48px;
-    background-color: var(--robins-color);
-    color: white;
-    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-    cursor: var(--pointer);
-    letter-spacing: 0.03em;
-    line-height: 1;
-    width: 165px;
-    height: 48px;
-    opacity: 0.65;
-    margin-top: var(--margin-top);
-}
-
-.buttonStandardActive:active {
-    transform: translateY(1px);
-    box-shadow: none;
-
 }
 
 .buttonLarge {
@@ -172,7 +124,6 @@ main {
     border: 0px;
     font-size: 16px;
     font-weight: 600;
-    height: 48px;
     background-color: var(--robins-color);
     color: white;
     box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
@@ -198,56 +149,6 @@ main {
     transform: translateY(1px);
     box-shadow: none;
 }
-
-.buttonLargeHover {
-    border-radius: 16px;
-    border: 0px;
-    font-size: 16px;
-    font-weight: 600;
-    height: 48px;
-    background-color: var(--robins-color);
-    color: white;
-    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-    cursor: var(--pointer);
-    letter-spacing: 0.03em;
-    line-height: 1;
-    width: 240px;
-    height: 55px;
-    opacity: 0.65;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    fill: white;
-    margin-top: var(--margin-top);
-}
-
-.buttonLargeActive {
-    border-radius: 16px;
-    border: 0px;
-    font-size: 16px;
-    font-weight: 600;
-    height: 48px;
-    background-color: var(--robins-color);
-    color: white;
-    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-    cursor: var(--pointer);
-    letter-spacing: 0.03em;
-    line-height: 1;
-    width: 240px;
-    height: 55px;
-    opacity: 0.65;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    fill: white;
-    margin-top: var(--margin-top);
-}
-
-.buttonLargeActive:active {
-    transform: translateY(1px);
-    box-shadow: none;
-}
-
 
 /* Versione con background bianco */
 .buttonMedium {
@@ -277,48 +178,6 @@ main {
     transform: translateY(1px);
     box-shadow: none;
     opacity: 0.85;
-
-}
-
-.buttonMediumHover {
-    border-radius: 16px;
-    font-size: 16px;
-    opacity: 1;
-    color: var(--robins-color);
-    background-color: rgb(255, 255, 255);
-    ;
-    letter-spacing: 0.03em;
-    line-height: 1;
-    width: 132px;
-    height: 48px;
-    border: 2px solid var(--robins-color);
-    box-shadow: none;
-    letter-spacing: 0.03em;
-    opacity: 0.65;
-    margin-top: var(--margin-top);
-    cursor: var(--pointer);
-}
-
-.buttonMediumActive {
-    border-radius: 16px;
-    font-size: 16px;
-    opacity: 0.65;
-    color: var(--robins-color);
-    background-color: rgb(255, 255, 255);
-    letter-spacing: 0.03em;
-    line-height: 1;
-    width: 132px;
-    height: 48px;
-    border: 2px solid var(--robins-color);
-    box-shadow: none;
-    letter-spacing: 0.03em;
-    margin-top: var(--margin-top);
-    cursor: var(--pointer);
-}
-
-.buttonMediumActive:active {
-    transform: translateY(1px);
-    box-shadow: none;
 }
 
 .buttonSmall {
@@ -345,48 +204,6 @@ main {
 
 .buttonSmall:active {
     background-color: var(--active-color);
-    transform: translateY(1px);
-    box-shadow: none;
-}
-
-
-.buttonSmallHover {
-    border-radius: 16px;
-    border: 0px;
-    font-size: 16px;
-    font-weight: 600;
-    height: 48px;
-    background-color: var(--robins-color);
-    color: white;
-    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-    cursor: var(--pointer);
-    letter-spacing: 0.03em;
-    line-height: 1;
-    width: 108px;
-    height: 48px;
-    opacity: 0.65;
-    margin-top: var(--margin-top);
-}
-
-.buttonSmallActive {
-    border-radius: 16px;
-    border: 0px;
-    font-size: 16px;
-    font-weight: 600;
-    height: 48px;
-    background-color: var(--robins-color);
-    color: white;
-    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-    cursor: var(--pointer);
-    letter-spacing: 0.03em;
-    line-height: 1;
-    width: 108px;
-    height: 48px;
-    opacity: 0.65;
-    margin-top: var(--margin-top);
-}
-
-.buttonSmallActive:active {
     transform: translateY(1px);
     box-shadow: none;
 }
@@ -419,47 +236,6 @@ main {
     box-shadow: none;
 }
 
-.buttonSquashedHover {
-    border-radius: 16px;
-    border: 0px;
-    font-size: 16px;
-    font-weight: 600;
-    height: 48px;
-    background-color: var(--robins-color);
-    color: white;
-    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-    cursor: var(--pointer);
-    letter-spacing: 0.03em;
-    line-height: 1;
-    width: 137px;
-    height: 32px;
-    opacity: 0.65;
-    margin-top: var(--margin-top);
-}
-
-.buttonSquashedActive {
-    border-radius: 16px;
-    border: 0px;
-    font-size: 16px;
-    font-weight: 600;
-    height: 48px;
-    background-color: var(--robins-color);
-    color: white;
-    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-    cursor: var(--pointer);
-    letter-spacing: 0.03em;
-    line-height: 1;
-    width: 137px;
-    height: 32px;
-    opacity: 0.65;
-    margin-top: var(--margin-top);
-}
-
-.buttonSquashedActive:active {
-    transform: translateY(1px);
-    box-shadow: none;
-}
-
 
 .buttonGear {
     border: none;
@@ -482,28 +258,7 @@ main {
 
 }
 
-.buttonGearHover {
-    border: none;
-    background-color: transparent;
-    fill: rgb(122, 110, 170);
-    opacity: 0.65;
-    cursor: var(--pointer);
-    margin-top: var(--margin-top);
-}
 
-.buttonGearActive {
-    border: none;
-    background-color: transparent;
-    fill: rgb(122, 110, 170);
-    cursor: var(--pointer);
-    opacity: 0.65;
-    margin-top: var(--margin-top);
-}
-
-.buttonGearActive:active {
-    transform: translateY(1px);
-    box-shadow: none;
-}
 
 .buttonLanguage {
     border: none;
@@ -521,29 +276,6 @@ main {
 .buttonLanguage:active {
     fill: rgb(122, 110, 170);
     opacity: 0.85;
-    transform: translateY(1px);
-    box-shadow: none;
-}
-
-.buttonLanguageHover {
-    border: none;
-    background-color: transparent;
-    fill: rgb(122, 110, 170);
-    opacity: 0.65;
-    cursor: var(--pointer);
-    margin-top: var(--margin-top);
-}
-
-.buttonLanguageActive {
-    border: none;
-    background-color: transparent;
-    fill: rgb(122, 110, 170);
-    cursor: var(--pointer);
-    opacity: 0.65;
-    margin-top: var(--margin-top);
-}
-
-.buttonLanguageActive:active {
     transform: translateY(1px);
     box-shadow: none;
 }
