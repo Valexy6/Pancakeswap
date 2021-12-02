@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: inherit;
 }
 
 main {
@@ -205,7 +210,8 @@ main {
 }
 
 
-/* sort by field*/
+/* -- Components -- */
+/* sort by field */
 .sort-by-container {
   cursor: pointer;
   width: 10rem; /* width change to 100% when in his layout div */
@@ -262,4 +268,117 @@ transform-origin: center top;
   .sort-by-field {
     min-width: 168px;
   }
+}
+
+/* card leadboard */
+.card-leadboard {
+  background-color: rgb(231, 227, 235);
+  border-radius: 24px;
+  padding: 1px 1px 3px;
+  max-width: 1150px; /*remove when in is container/layout*/
+}
+
+.fake-border {
+  border-radius: 24px;
+  color:rgb(40, 13, 95);
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  font-family: Kanit, sans-serif;
+  display: flex;
+  max-width: 1150px; /*remove when in is container/layout*/
+}
+
+.card-l-column1 {
+  background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(239, 244, 245) 46.87%, rgb(243, 239, 255) 100%);
+  padding: 16px;
+  text-align: center;
+  width: 56px;
+}
+
+.card-l-column2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px;
+}
+
+.card-l-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-l-info div {
+  display: flex;
+  align-items: center;
+  vertical-align: baseline;
+}
+
+.card-l-info svg {
+  fill: rgb(40, 13, 95);
+  margin-right: 8px;
+}
+
+.card-l-column2 a {
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 16px;
+  font-family: Kanit, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  outline: 0;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 32px;
+  padding: 0px 16px;
+  background-color: transparent;
+  border: 2px solid rgb(31, 199, 212);
+  color: rgb(31, 199, 212);
+}
+
+.card-l-column2 div:last-child {
+  display: inline-flex;
+  align-items: center;
+}
+
+.team-members {
+  margin-left: 24px;
+}
+
+.leadboard-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 24px;
+}
+
+/* typography */
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  color:rgb(40, 13, 95);
+  vertical-align: baseline;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-l-column1 p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color:rgb(40, 13, 95);
+}
+
+.card-l-info p {
+  font-size: 1rem;
+  color: rgb(122, 110, 170);
+  margin-right: 24px;
 }
