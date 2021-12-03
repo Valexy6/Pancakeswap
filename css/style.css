@@ -1,26 +1,3 @@
-:root {
-    --robins-color: #1fc7d4;
-    /* margine tra bottoni e testo */
-    --margin-top: 10px;
-    --margin-left: 30px;
-    --social-icons-color: #B8ADD2;
-    --pointer: pointer;
-    --hover-color: rgb(31, 199, 212, 0.65);
-    --active-color: rgb(31, 199, 212, 0.85);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto";
-}
-
-main {
-    padding: 2rem;
-    background-color: rgb(215, 202, 236);
-    min-height: 100vh;
-}
 
 .title {
     font-size: 1.5rem;

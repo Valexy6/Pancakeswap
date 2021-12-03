@@ -1,0 +1,249 @@
+/* -- colors + variables -- */
+:root {
+  --robins-color: #1fc7d4;
+  /* margine tra bottoni e testo */
+  --margin-top: 10px;
+  --margin-left: 30px;
+  --social-icons-color: #b8add2;
+  --pointer: pointer;
+  --hover-color: rgb(31, 199, 212, 0.65);
+  --active-color: rgb(31, 199, 212, 0.85);
+  --yellow: rgb(255, 178, 55);
+}
+
+/* -- generic -- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.box {
+  margin: 1rem;
+  min-width: 30%;
+}
+
+.titles {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto";
+}
+
+
+/* TYPOGRAPHY */
+.h1 {
+  font-size: 64px;
+  font-weight: 600;
+  font-family: "Kanit", sans-serif;
+}
+
+.h2 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Kanit", sans-serif;
+}
+
+.h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Kanit", sans-serif;
+}
+
+.h4 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Kanit", sans-serif;
+}
+
+.key-words {
+  color: rgb(118, 69, 217);
+}
+
+.p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif;
+}
+
+
+/* -- Components -- */
+/* sort by field */
+.sort-by-container {
+  cursor: pointer;
+  width: 10rem; /* width change to 100% when in his layout div */
+  height: 40px;
+  position: relative;
+  background-color: rgb(238, 234, 244);
+  border-radius: 16px;
+  border: 1px solid rgb(215, 202, 236);
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  outline: none;
+  color: rgb(40, 13, 95);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 13rem; /* da rimuovere appena si aggiunge javascritp */
+}
+
+.sort-by-head {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px;
+  font-family: "Kanit", sans-serif;
+  color: rgb(40, 13, 95);
+}
+
+.sort-by-list {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  background-color: rgb(238, 234, 244);
+  border: 1px solid rgb(215, 202, 236);
+  border-radius: 0 0 16px 16px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px,
+    rgb(14 14 44 / 10%) 0px 4px 12px -8px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.sort-by-list li {
+  list-style-type: none;
+  padding: 8px 16px;
+  margin: 0px;
+  line-height: 1.5;
+  font-family: "Kanit", sans-serif;
+}
+/*
+  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+  transform: scaleY(0);
+  transform-origin: center top;
+  opacity: 0;
+  transform-origin: center top;
+  */
+
+@media screen and (min-width: 576px) {
+  .sort-by-field {
+    min-width: 168px;
+  }
+}
+
+/* card leadboard */
+.card-leadboard {
+  background-color: rgb(231, 227, 235);
+  border-radius: 24px;
+  padding: 1px 1px 3px;
+  max-width: 1150px; /*remove when in is container/layout*/
+}
+
+.fake-border {
+  border-radius: 24px;
+  color: rgb(40, 13, 95);
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  max-width: 1150px; /*remove when in is container/layout*/
+}
+
+.card-l-column1 {
+  background: linear-gradient(
+    139.73deg,
+    rgb(230, 253, 255) 0%,
+    rgb(239, 244, 245) 46.87%,
+    rgb(243, 239, 255) 100%
+  );
+  padding: 16px;
+  text-align: center;
+  width: 56px;
+}
+
+.card-l-column2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px;
+}
+
+.card-l-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-l-info div {
+  display: flex;
+  align-items: center;
+  vertical-align: baseline;
+}
+
+.icons-leadboard {
+  fill: rgb(40, 13, 95);
+  margin-right: 8px;
+}
+
+.card-l-column2 a {
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 16px;
+  font-family: "Kanit", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  outline: 0;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 32px;
+  padding: 0px 16px;
+  background-color: transparent;
+  border: 2px solid rgb(31, 199, 212);
+  color: rgb(31, 199, 212);
+}
+
+.card-l-column2 a:hover {
+  opacity: 0.65;
+}
+
+.card-l-column2 div:last-child {
+  display: inline-flex;
+  align-items: center;
+}
+
+.team-members {
+  margin-left: 24px;
+}
+
+.leadboard-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 24px;
+}
+
+.card-l-info > h3 {
+  line-height: 1.1;
+  color: rgb(40, 13, 95);
+  vertical-align: baseline;
+}
+
+.card-l-column1 p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgb(40, 13, 95);
+}
+
+.card-l-info p {
+  font-size: 1rem;
+  color: rgb(122, 110, 170);
+  margin-right: 24px;
+}

@@ -1,3 +1,17 @@
+/* -- colors + variables -- */
+:root {
+  --robins-color: #1fc7d4;
+  /* margine tra bottoni e testo */
+  --margin-top: 10px;
+  --margin-left: 30px;
+  --social-icons-color: #B8ADD2;
+  --pointer: pointer;
+  --hover-color: rgb(31, 199, 212, 0.65);
+  --active-color: rgb(31, 199, 212, 0.85);
+  --yellow: rgb(255, 178, 55);
+}
+
+
 /* -- generic -- */
 * {
   margin: 0;
@@ -7,7 +21,6 @@
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  font-weight: inherit;
 }
 
 main {
@@ -15,23 +28,26 @@ main {
   background-color: rgb(215, 202, 236);
   min-height: 100vh;
   line-height: 1;
+}
+
+/* generic tipography */
+.sec-titles {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
   font-family: "Roboto";
 }
 
-.sec-titles {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 .titles {
-  font-size: 1rem;
-  margin-top: 3rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
+  font-family: "Roboto";
 }
 
 .sub-titles {
-  font-size: 0.7rem;
-  margin-bottom: 0.7rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-family: "Roboto";
 }
 
 .bcg-dark {
@@ -40,7 +56,8 @@ main {
   padding: 0.5rem;
 }
 
-/* -- container -- */
+
+/* container */
 .container {
   padding: 2rem;
   border: 1px solid rgb(40, 13, 95);
@@ -49,17 +66,32 @@ main {
 }
 
 .box {
-  margin-bottom: 1rem;
+  margin: 1rem 0px;
   min-width: 30%;
+}
+
+.box-color {
+  margin-bottom: 1rem;
 }
 
 .container-inner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-column-gap: 3rem;
 }
 
-/* -- logos -- */
+.container-inner-colors {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.container-inner-colors > div {
+  margin-right: 2rem;
+}
+
+
+/* -- LOGOS -- */
 /* eyes animation */
 .logo-container:hover .left-eye,
 .logo-container:hover .right-eye {
@@ -84,7 +116,8 @@ main {
   width: 32px;
 }
 
-/* -- inputs -- */
+
+/* -- INPUTS -- */
 /* search field */
 .search-field {
   border: 1px solid rgb(215, 202, 236);
@@ -96,7 +129,7 @@ main {
   font-size: 1rem;
   height: 40px;
   padding: 0px 16px;
-  font-family: Kanit, sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
 .search-field::placeholder {
@@ -112,7 +145,7 @@ main {
   cursor: pointer;
   margin-right: 1rem;
   color: rgb(40, 13, 95);
-  font-family: Kanit, sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -162,7 +195,7 @@ main {
   height: 100%;
   width: 60px;
   padding: 4px 16px;
-  font-family: Kanit, sans-serif;
+  font-family: "Kanit", sans-serif;
   text-align: center;
 }
 
@@ -185,7 +218,7 @@ main {
   font-size: 1rem;
   height: 100%;
   width: 100%;
-  font-family: Kanit, sans-serif;
+  font-family: "Kanit", sans-serif;
   text-align: center;
 }
 
@@ -193,7 +226,7 @@ main {
   outline: none;
   border: none;
   flex: 1 1 auto;
-  font-family: Kanit, sans-serif;
+  font-family: "Kanit", sans-serif;
   text-align: right;
   color: rgb(40, 13, 95);
   font-weight: 500;
@@ -210,179 +243,89 @@ main {
 }
 
 
-/* -- Components -- */
-/* sort by field */
-.sort-by-container {
-  cursor: pointer;
-  width: 10rem; /* width change to 100% when in his layout div */
-  height: 40px;
-  position: relative;
-  background-color: rgb(238, 234, 244);
-  border-radius: 16px;
-  border: 1px solid rgb(215, 202, 236);
-  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
-  outline: none;
-  color: rgb(40, 13, 95);
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: Kanit, sans-serif;
+/* -- COLORS -- */
+/* box1 */
+.background-color {
+  background-color: rgb(250, 249, 250);
+  width: 120px;
+  height: 60px;
 }
 
-.sort-by-head {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 16px;
+/* box2 */
+.section-title {
+  background-color: rgb(118, 69, 217);
+  width: 120px;
+  height: 60px;
 }
 
-.sort-by-list {
-  height: auto; /*chenge to auto when display*/
-  width: 100%;
-  position: absolute;
-  overflow: hidden;
-  background-color: rgb(238, 234, 244);
-  border: 1px solid rgb(215, 202, 236);
-  border-radius: 0 0 16px 16px;
-  box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px, rgb(14 14 44 / 10%) 0px 4px 12px -8px;
-  overflow: hidden;
-  z-index: 10;
+/* box3 */
+.section-subtitle {
+  background-color: rgb(40, 13, 95);
+  width: 120px;
+  height: 60px;
 }
 
-.sort-by-list li {
-  list-style-type: none;
-  padding: 8px 16px;
-  margin: 0px;
-  line-height: 1.5;
-}
-/*
-transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
-transform: scaleY(0);
-transform-origin: center top;
-opacity: 0;
-transform-origin: center top;
-*/
-
-
-@media screen and (min-width: 576px) {
-  .sort-by-field {
-    min-width: 168px;
-  }
+/* box4 */
+.section-paragraph {
+  background-color: rgb(122, 110, 170);
+  width: 120px;
+  height: 60px;
 }
 
-/* card leadboard */
-.card-leadboard {
-  background-color: rgb(231, 227, 235);
-  border-radius: 24px;
-  padding: 1px 1px 3px;
-  max-width: 1150px; /*remove when in is container/layout*/
+/* box5 */
+.button-color {
+  background-color: rgb(31, 199, 212);
+  width: 120px;
+  height: 60px;
 }
 
-.fake-border {
-  border-radius: 24px;
-  color:rgb(40, 13, 95);
-  overflow: hidden;
-  width: 100%;
-  background-color: white;
-  font-family: Kanit, sans-serif;
-  display: flex;
-  max-width: 1150px; /*remove when in is container/layout*/
+/* box6 */
+.footer-yellow {
+  background-color: var(--yellow);
+  width: 120px;
+  height: 60px;
 }
 
-.card-l-column1 {
-  background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(239, 244, 245) 46.87%, rgb(243, 239, 255) 100%);
-  padding: 16px;
-  text-align: center;
-  width: 56px;
+/* box7 */
+.gradient {
+  background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+  width: 120px;
+  height: 60px;
 }
 
-.card-l-column2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 24px;
-}
 
-.card-l-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.card-l-info div {
-  display: flex;
-  align-items: center;
-  vertical-align: baseline;
-}
-
-.card-l-info svg {
-  fill: rgb(40, 13, 95);
-  margin-right: 8px;
-}
-
-.card-l-column2 a {
-  display: inline-flex;
-  text-decoration: none;
-  align-items: center;
-  border-radius: 16px;
-  font-family: Kanit, sans-serif;
-  font-size: 1rem;
+/* -- TYPOGRAPHY -- */
+.h1 {
+  font-size: 64px;
   font-weight: 600;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  outline: 0;
-  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  height: 32px;
-  padding: 0px 16px;
-  background-color: transparent;
-  border: 2px solid rgb(31, 199, 212);
-  color: rgb(31, 199, 212);
+  font-family: "Kanit", sans-serif;
 }
 
-.card-l-column2 a:hover {
-  opacity: 0.65;
-}
-
-.card-l-column2 div:last-child {
-  display: inline-flex;
-  align-items: center;
-}
-
-.team-members {
-  margin-left: 24px;
-}
-
-.leadboard-avatar {
-  border-radius: 50%;
-  overflow: hidden;
-  margin-left: 24px;
-}
-
-/* typography */
-h3 {
+.h2 {
   font-size: 40px;
   font-weight: 600;
-  line-height: 1.1;
-  color:rgb(40, 13, 95);
-  vertical-align: baseline;
+  font-family: "Kanit", sans-serif;
 }
 
-h4 {
+.h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Kanit", sans-serif;
+}
+
+.h4 {
   font-size: 24px;
   font-weight: 600;
+  font-family: "Kanit", sans-serif;
 }
 
-.card-l-column1 p {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.5;
-  color:rgb(40, 13, 95);
+.key-words {
+  color: rgb(118, 69, 217);
 }
 
-.card-l-info p {
-  font-size: 1rem;
+.p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif;
   color: rgb(122, 110, 170);
-  margin-right: 24px;
 }
