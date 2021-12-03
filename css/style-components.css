@@ -29,6 +29,7 @@
 
 .titles {
   font-size: 1.2rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   font-family: "Roboto";
 }
@@ -246,4 +247,214 @@
   font-size: 1rem;
   color: rgb(122, 110, 170);
   margin-right: 24px;
+}
+
+/* card NFT */
+.card {
+  width: 274px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+/* main:hover {} */
+.card:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* box che contiene l'immagine  */
+.cacti {
+  border-radius: 8px;
+  max-height: 258px;
+  max-width: 258px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.firstPart {
+  max-height: 270px;
+}
+
+.cacti img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card .subP {
+  font-family: "Kanit";
+  font-size: 12px;
+  color: rgb(122, 110, 170);
+}
+
+.titleCard {
+  font-family: "Kanit";
+  font-size: 16px;
+  color: rgb(40, 13, 95);
+  padding-top: 8px;
+}
+
+.finalPart {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 65px;
+  width: 253px;
+  height: 24px;
+  color: rgb(122, 110, 170);
+  font-family: "Kanit";
+  font-size: 12px;
+  border-top: 1px solid gray;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.finalPartRight {
+  display: flex;
+  align-items: center;
+}
+
+.money,
+.svg {
+  padding-right: 5px;
+}
+
+.finalPartRight .svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finalPartRight .number {
+  font-family: "Kanit";
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+}
+
+/* Card IFO */
+.card-ifo {
+  max-width: 325px;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: rgb(238, 234, 244) 0px 0px 5px inset;
+}
+
+.head {
+  min-height: 78px;
+  background: linear-gradient(rgb(167, 232, 241) 0%, rgb(148, 225, 242) 100%);
+  border-radius: 24px 24px 0px 0px;
+  padding: 24px;
+}
+
+.containerHead {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(40, 13, 95);
+  font-family: "Kanit";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.title-ifo {
+  margin-right: 166px;
+}
+
+.middlePart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bunnyQuestionM {
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+.textMiddle p {
+  margin-bottom: 23px;
+}
+
+.theButton {
+  margin-bottom: 30px;
+}
+
+.theButton button {
+  border-radius: 16px;
+  border: 0px;
+  font-family: "Kanit";
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--robins-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 277px;
+  height: 48px;
+  opacity: 1;
+}
+
+.finalPart-ifo {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstLine-ifo {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Kanit";
+  font-size: 14px;
+  color: rgb(122, 110, 170);
+  margin-bottom: 3px;
+}
+
+.secondLine {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Kanit";
+  font-size: 14px;
+  color: rgb(122, 110, 170);
+  margin-bottom: 3px;
+}
+
+.thirdLine {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Kanit";
+  font-size: 14px;
+  color: rgb(122, 110, 170);
+  margin-bottom: 3px;
+}
+
+.fourthLine {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Kanit";
+  font-size: 14px;
+  color: rgb(122, 110, 170);
+  margin-bottom: 48px;
+}
+
+.firstText {
+  margin-right: 102px;
+}
+
+.secondText {
+  margin-right: 24px;
+}
+
+.thirdText {
+  margin-right: 126px;
+}
+
+.fourthText {
+  margin-right: 141px;
 }
