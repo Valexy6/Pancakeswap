@@ -86,7 +86,7 @@ main {
   justify-content: flex-start;
 }
 
-.container-inner-colors > div {
+.container-inner-colors>div {
   margin-right: 2rem;
 }
 
@@ -102,8 +102,15 @@ main {
 }
 
 @keyframes eyes {
-  0%, 100% { transform: scaleY(1);}
-  50% { transform: scaleY(0.1);}
+
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0.1);
+  }
 }
 
 /* logo desktop */
@@ -176,7 +183,7 @@ main {
   content: "";
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
-  height: 12px;  
+  height: 12px;
   width: 12px;
   position: absolute;
   left: 6px;
@@ -328,4 +335,336 @@ main {
   font-weight: 400;
   font-family: "Kanit", sans-serif;
   color: rgb(122, 110, 170);
+}
+
+
+/* -- BUTTON -- */
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.wrapperBox {
+  padding: 2rem;
+  border: 1px solid rgb(40, 13, 95);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* contenitore del box contenente tutti i bottoni */
+.wrapperButton {
+  margin-bottom: 1rem;
+  display: flex;
+  padding: 10px;
+}
+
+/* contenitori singoli delle varie tipologie dei bottoni */
+.elementsStandard {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.elementsLarge {
+  display: flex;
+  flex-direction: column;
+}
+
+.elementsMedium {
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--margin-left)
+}
+
+.elementsSmall {
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--margin-left)
+}
+
+.elementsSquashed {
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--margin-left)
+}
+
+.elementsGear {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: var(--margin-left);
+}
+
+.elementsLanguage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: var(--margin-left);
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonStandard {
+  border-radius: 16px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--robins-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: var(--pointer);
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 165px;
+  height: 48px;
+  opacity: 1;
+  margin-top: var(--margin-top);
+}
+
+.buttonStandard:hover {
+  background-color: rgb(31, 199, 212, 0.65);
+}
+
+.buttonStandard:active {
+  background-color: rgb(31, 199, 212, 0.85);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.buttonLarge {
+  border-radius: 16px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--robins-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: var(--pointer);
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 240px;
+  height: 55px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: white;
+  margin-top: var(--margin-top);
+}
+
+.buttonLarge:hover {
+  background-color: var(--hover-color);
+}
+
+.buttonLarge:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* Versione con background bianco */
+.buttonMedium {
+  border-radius: 16px;
+  font-size: 16px;
+  opacity: 1;
+  color: var(--robins-color);
+  background-color: rgb(255, 255, 255);
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 132px;
+  height: 48px;
+  border: 2px solid var(--robins-color);
+  box-shadow: none;
+  letter-spacing: 0.03em;
+  margin-top: var(--margin-top);
+  cursor: var(--pointer);
+}
+
+.buttonMedium:hover {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.65;
+}
+
+.buttonMedium:active {
+  background-color: rgb(255, 255, 255);
+  transform: translateY(1px);
+  box-shadow: none;
+  opacity: 0.85;
+}
+
+.buttonSmall {
+  border-radius: 16px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  background-color: var(--robins-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: var(--pointer);
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 108px;
+  height: 48px;
+  opacity: 1;
+  margin-top: var(--margin-top);
+}
+
+.buttonSmall:hover {
+  background-color: var(--hover-color);
+}
+
+.buttonSmall:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.buttonSquashed {
+  border-radius: 16px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  background-color: var(--robins-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: var(--pointer);
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 137px;
+  height: 32px;
+  opacity: 1;
+  margin-top: var(--margin-top);
+}
+
+.buttonSquashed:hover {
+  background-color: var(--hover-color);
+}
+
+.buttonSquashed:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.buttonGear {
+  border: none;
+  background-color: transparent;
+  fill: rgb(122, 110, 170);
+  cursor: var(--pointer);
+  margin-top: var(--margin-top);
+}
+
+.buttonGear:hover {
+  fill: rgb(122, 110, 170);
+  opacity: 0.65;
+}
+
+.buttonGear:active {
+  fill: rgb(122, 110, 170);
+  opacity: 0.85;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.buttonLanguage {
+  border: none;
+  background-color: transparent;
+  fill: rgb(122, 110, 170);
+  cursor: var(--pointer);
+  margin-top: var(--margin-top);
+}
+
+.buttonLanguage:hover {
+  fill: rgb(122, 110, 170);
+  opacity: 0.65;
+}
+
+.buttonLanguage:active {
+  fill: rgb(122, 110, 170);
+  opacity: 0.85;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* -- ICONS -- */
+
+/* contenitore delle icone */
+.wrapperBox2 {
+  padding: 2rem;
+  border: 1px solid rgb(40, 13, 95);
+  background-color: white;
+  margin-top: 2rem;
+}
+
+.title-icons {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.wrapperIcons {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.gear {
+  fill: rgb(122, 110, 170);
+}
+
+.language {
+  fill: rgb(122, 110, 170);
+}
+
+.lottery {
+  fill: white;
+  background-color: gray;
+  margin-bottom: 1rem;
+}
+
+.users {
+  fill: rgb(118, 69, 217);
+}
+
+.trades {
+  fill: rgb(31, 199, 212);
+}
+
+.staked {
+  fill: rgb(237, 75, 158);
+}
+
+.twitter {
+  fill: var(--social-icons-color);
+}
+
+.telegram {
+  cursor: var(--pointer);
+}
+
+.reddit {
+  cursor: var(--pointer);
+}
+
+.instagram {
+  cursor: var(--pointer);
+}
+
+.github {
+  cursor: var(--pointer);
+}
+
+.discord {
+  cursor: var(--pointer);
 }
