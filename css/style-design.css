@@ -9,6 +9,12 @@
   --hover-color: rgb(31, 199, 212, 0.65);
   --active-color: rgb(31, 199, 212, 0.85);
   --yellow: rgb(255, 178, 55);
+  --background-color: rgb(250, 249, 250);
+  --section-title: rgb(118, 69, 217);
+  --section-subtitle: rgb(40, 13, 95);
+  --section-paragraph: rgb(122, 110, 170);
+  --button-color: rgb(31, 199, 212);
+  --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
 }
 
 
