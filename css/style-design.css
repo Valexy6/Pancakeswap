@@ -259,35 +259,35 @@ main {
 /* -- COLORS -- */
 /* box1 */
 .background-color {
-  background-color: rgb(250, 249, 250);
+  background-color: var(--background-color);
   width: 120px;
   height: 60px;
 }
 
 /* box2 */
 .section-title {
-  background-color: rgb(118, 69, 217);
+  background-color: var(--section-title);
   width: 120px;
   height: 60px;
 }
 
 /* box3 */
 .section-subtitle {
-  background-color: rgb(40, 13, 95);
+  background-color: var(--section-subtitle);
   width: 120px;
   height: 60px;
 }
 
 /* box4 */
 .section-paragraph {
-  background-color: rgb(122, 110, 170);
+  background-color: var(--section-paragraph);
   width: 120px;
   height: 60px;
 }
 
 /* box5 */
 .button-color {
-  background-color: rgb(31, 199, 212);
+  background-color: var(--button-color);
   width: 120px;
   height: 60px;
 }
@@ -301,7 +301,7 @@ main {
 
 /* box7 */
 .gradient {
-  background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+  background: var(--gradient)
   width: 120px;
   height: 60px;
 }
