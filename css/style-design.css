@@ -301,7 +301,7 @@ main {
 
 /* box7 */
 .gradient {
-  background: var(--gradient)
+  background: var(--gradient);
   width: 120px;
   height: 60px;
 }
