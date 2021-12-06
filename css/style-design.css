@@ -90,6 +90,15 @@ main {
   margin-right: 2rem;
 }
 
+.wrapperBox {
+  padding: 2rem;
+  border: 1px solid rgb(40, 13, 95);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 
 /* -- LOGOS -- */
 /* eyes animation */
@@ -340,19 +349,7 @@ main {
 
 /* -- BUTTON -- */
 
-.title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
 
-.wrapperBox {
-  padding: 2rem;
-  border: 1px solid rgb(40, 13, 95);
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
 /* contenitore del box contenente tutti i bottoni */
 .wrapperButton {
