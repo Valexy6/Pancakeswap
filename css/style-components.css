@@ -40,6 +40,12 @@
   font-family: "Roboto";
 }
 
+.wrapper-prediction {
+  padding: 2rem;
+  background-color: rgb(111, 105, 121);
+  min-height: 100vh;
+  font-family: Kanit, sans-serif;
+}
 
 /* TYPOGRAPHY */
 .h1 {
@@ -64,6 +70,15 @@
   font-size: 24px;
   font-weight: 600;
   font-family: "Kanit", sans-serif;
+}
+
+.titoloh1 > h4 {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .key-words {
@@ -596,4 +611,157 @@
   font-size: 16px;
    font-weight: 400;
   line-height: 1.5;
+}
+
+
+.boxprediction {
+  background: rgba(255, 255, 255, 0.6);
+  width: 900px;
+  height: 580px;
+  padding: 16px;
+  border: 1px solid rgb(231, 227, 235);
+  box-sizing: border-box;
+
+  border-radius: 72px;
+}
+
+.titoloh1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(118, 69, 217);
+}
+
+.contenitore {
+  display: grid;
+  background-color: transparent;
+  width: 650px;
+  height: 400px;
+  margin: 50px 100px 50px 100px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1;
+  padding: 16px;
+}
+
+.scheda1 {
+  display: block;
+  position: relative;
+  width: 285px;
+  height: 350px;
+  background-color: rgb(255, 178, 55);
+  border-radius: 24px;
+  box-shadow: 0px 4px 2px rgba(20, 19, 19, 0.5), 0px 1px 1px rgb(26, 24, 24);
+  transform: rotate(-3deg);
+}
+
+.scheda1 > img {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
+.scheda2 {
+  display: block;
+  position: relative;
+  width: 285px;
+  height: 350px;
+  background-color: rgb(60, 23, 134);
+  border-radius: 24px;
+  box-shadow: 0px 4px 2px rgba(20, 19, 19, 0.5), 0px 1px 1px rgb(26, 24, 24);
+  transform: rotate(3deg);
+}
+
+.scheda2 > img {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
+.scheda1 > h3 {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 20px;
+  font-family: Kanit, sans-serif;
+}
+
+.scheda1 > p {
+  position: absolute;
+  top: 110px;
+  left: 30px;
+  color: rgb(40, 13, 95);
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 36px;
+  font-family: Kanit, sans-serif;
+}
+
+.sottotitolo > p {
+  position: absolute;
+  top: 210px;
+  left: 30px;
+  color: rgb(40, 13, 95);
+
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: Kanit, sans-serif;
+}
+
+span {
+  position: absolute;
+  top: 165px;
+  left: 30px;
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: Kanit, sans-serif;
+}
+
+.titoletto > p {
+  position: absolute;
+  top: 210px;
+  left: 20px;
+  color: rgb(221, 219, 226);
+
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: Kanit, sans-serif;
+}
+
+.scheda2 > h3 {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  color: rgb(221, 219, 226);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 20px;
+  font-family: Kanit, sans-serif;
+}
+
+.scheda2 > p {
+  position: absolute;
+  top: 110px;
+  left: 20px;
+  color: rgb(255, 178, 55);
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 36px;
+  font-family: Kanit, sans-serif;
+}
+
+.secondospan {
+  position: absolute;
+  top: 165px;
+  left: 20px;
+  color: rgb(221, 219, 226);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: Kanit, sans-serif;
 }
