@@ -1,0 +1,79 @@
+/* -- generic -- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Roboto"; */
+  }
+  
+  main {
+    padding: 2rem;
+    background-color: rgb(201, 196, 209);
+    min-height: 100vh;
+  }
+  
+  .titles {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+  }
+  
+  .components {
+   display: grid;
+   grid-template-columns: 4;
+   grid-template-rows: 1fr;
+   padding: 2rem;
+   border: 1px solid rgb(40, 13, 95);
+   background-color: rgb(207, 141, 141);
+  }
+  
+  .components div {
+   margin-bottom: 1rem;
+  }
+  
+  .card {
+   grid-column: 1;
+   height: 280px;
+   width: 280px;
+   background-color: white;
+   border-radius: 24px;
+   box-shadow: 0px 4px 2px rgba(231, 223, 223, 0.5), 0px 1px 1px #888;
+  
+  
+ }
+ .immagine > img
+  {
+   float: right;
+   height: 36px;
+   width: 36px;
+   margin: 16px; 
+   background-color: rgb(118, 69, 217);
+   
+   
+ }
+
+ .text {
+  display: block;
+  padding: 24px;
+  padding-top: 130px;
+  font-size:22px;
+  font-weight: 700;
+  line-height: 1.1;
+  font-family: Kanit, sans-serif;
+}
+ 
+ .people {
+  color: rgb(40, 13, 95);
+ }
+
+ .user {
+  color: rgb(118, 69, 217);
+  font-size: 30px;
+ }
+
+.days {
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; 
+  padding-top: 30px;
+}
