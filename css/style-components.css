@@ -9,6 +9,12 @@
   --hover-color: rgb(31, 199, 212, 0.65);
   --active-color: rgb(31, 199, 212, 0.85);
   --yellow: rgb(255, 178, 55);
+  --background-color: rgb(250, 249, 250);
+  --purple: rgb(118, 69, 217);
+  --dark-purple: rgb(40, 13, 95);
+  --light-purple: rgb(122, 110, 170);
+  --cyan: rgb(31, 199, 212);
+  --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
 }
 
 /* -- generic -- */
@@ -457,4 +463,137 @@
 
 .fourthText {
   margin-right: 141px;
+}
+
+/* Card Info */
+.card-info {
+  max-width: 568px;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+  padding: 24px;
+  font-family: "Kanit";
+}
+
+.card-info h4 {
+  color: var(--purple);
+  font-size: 16px;
+  font-weight: 600; 
+  line-height: 1.5;
+}
+
+.card-info h3 {
+  color: var(--dark-purple);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.card-info h5 {
+  color: var(--dark-purple);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.graphics {
+  height: 250px;
+}
+
+/* Card Info Tokens */
+.card-info-tokens {
+  width: 100%;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: white;
+  border-radius: 24px;
+  border: 1px solid rgb(231, 227, 235);
+  font-family: "Kanit";
+}
+
+.top-table {
+  display: grid;
+  gap: 1em;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px 24px;
+  grid-template-columns: 20px 3fr repeat(4, 1fr);
+}
+
+.hashtag {
+  color: var(--purple);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.name {
+  color: var(--purple);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.price {
+  color: var(--purple);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.price-change {
+  color: var(--purple);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.volume {
+  color: var(--purple);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.liquidity {
+  color: var(--purple);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.line {
+  height: 1px;
+  background-color: rgb(231, 227, 235);
+  width: 100%;
+}
+
+.page-of {
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 0.2em;
+  margin-bottom: 1.2em;
+}
+
+.arrow {
+  color: var(--cyan);
+  padding: 0px 20px;
+}
+
+.text-page-of {
+  color: var(--dark-purple);
+  font-size: 16px;
+   font-weight: 400;
+  line-height: 1.5;
 }
