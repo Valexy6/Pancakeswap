@@ -348,13 +348,11 @@ main {
 
 
 /* -- BUTTON -- */
-
-
-
 /* contenitore del box contenente tutti i bottoni */
 .wrapperButton {
   margin-bottom: 1rem;
   display: flex;
+  flex-flow: row wrap;
   padding: 10px;
 }
 
@@ -595,7 +593,6 @@ main {
 }
 
 /* -- ICONS -- */
-
 /* contenitore delle icone */
 .wrapperBox2 {
   padding: 2rem;
@@ -609,9 +606,9 @@ main {
   margin-bottom: 1rem;
 }
 
-
 .wrapperIcons {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   padding: 40px 20px;
 }
