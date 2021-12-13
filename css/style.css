@@ -18,6 +18,8 @@
   text-decoration: none;
   font-family: "Kanit", sans-serif;
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* -- NAVBAR -- */
@@ -179,17 +181,18 @@ display: flex;
 }
 
 
-/* -- header right -- */
+/* -- nav right -- */
 .header-right {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .pancakes-link {
   margin-right: 0.75rem;
 }
 
-.pancakes-link a{
+.pancakes-link a {
   display: flex;
   align-items: center;
   font-family: "Kanit", sans-serif;
@@ -206,10 +209,29 @@ display: flex;
   transform: scale(1.2);
 }
 
-.icon-button {
+.icons-button {
   display: flex;
-  align-items: center;
   height: 100%;
+  align-items: center;
+}
+
+.language-container {
+  position: relative;
+  height: 100%;
+  padding: 0px 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.lang-selector {
+  /* display: none; */
+  position: absolute;
+}
+
+.lang {
+  padding-top: 0px;
+}
+
+.setting {
   margin-right: 0.5rem;
 }
 
