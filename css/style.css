@@ -206,6 +206,13 @@ display: flex;
   transform: scale(1.2);
 }
 
+.icon-button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 0.5rem;
+}
+
 .button-wallet {
   display: flex;
   align-items: center;
@@ -236,6 +243,11 @@ display: flex;
 }
 
 /* -- UTILITIES -- */
+
+.no-style-button {
+  border: none;
+  background-color: transparent;
+}
 
 /* -- TYPOGRAPHY -- */
 .h1 {
