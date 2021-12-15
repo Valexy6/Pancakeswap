@@ -22,6 +22,24 @@
   padding: 0px;
 }
 
+/* -- SCROLL BAR --*/
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--light-purple);
+  border-radius: 0.5rem;
+}
+
 /* -- NAVBAR -- */
 /* -- logo -- */
 /* eyes animation */
@@ -209,12 +227,6 @@ display: flex;
   transform: scale(1.2);
 }
 
-.icons-button {
-  display: flex;
-  height: 100%;
-  align-items: center;
-}
-
 .language-container {
   position: relative;
   height: 100%;
@@ -223,16 +235,48 @@ display: flex;
 }
 
 .lang-selector {
-  /* display: none; */
+  display: none;
   position: absolute;
+  width: max-content;
+  max-height: 400px;
+  padding: 1rem;
+  z-index: 10;
+  border-radius: 4px;
+  box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
+  background-color: white;
+  overflow-y: auto;
+  transform: translate(-50%, 0px);
+  left: 50%;
+}
+
+.language-container:hover .lang-selector {
+  display: block;
 }
 
 .lang {
-  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--dark-purple);
+  padding: 0px 0.5rem;
+  border-radius: 8px;
+  width: 100%;
+  min-height: 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lang:hover {
+  opacity: 0.65;
 }
 
 .setting {
-  margin-right: 0.5rem;
+  margin-right: 0.75rem;
+  margin-left: 0.25rem;
 }
 
 .button-wallet {
@@ -271,6 +315,17 @@ display: flex;
   background-color: transparent;
 }
 
+.icons-button {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icons-button:hover {
+  opacity: 0.65;
+}
+
 /* -- TYPOGRAPHY -- */
 .h1 {
   font-size: 64px;
@@ -305,4 +360,31 @@ display: flex;
   font-weight: 400;
   font-family: "Kanit", sans-serif;
   color: var(--light-purple);
+}
+
+/* -- RESOPNSIVE -- */
+@media screen and (min-width: 967px) {
+  .mobile-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  .desktop-logo {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .button-wallet {
+    white-space: pre-wrap;
+  }
+
+  .navlink-left {
+    display: none;
+  }
+
+  .pancakes-link{
+    display: none;
+  }
 }
