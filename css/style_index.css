@@ -12,6 +12,7 @@
   --fuksia: rgb(237, 75, 158);
   --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
   --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+  --gradient-pink-blue: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
 }
 
 
@@ -619,58 +620,22 @@ p:nth-child(6) {
   color: var(--fuksia);
 }
 
-/* -- DIVIDER --*/
+/* -- DIVIDER 1 --*/
 .divider1 {
   fill: rgb(216, 203, 237);
-  width: 100%;
-  height: 100%;
-  max-height: 48px;
 }
 
 /* -- SEC 2 > TRADE ANYTHING --*/
-.sec2-container {
-  width: 100%;
-  max-width: 968px;
-  height: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+.sec2 {
+  background-color: var(--white);
 }
 
-.sec2-left {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 0%;
-  align-self: center;
+.sec2 .sec-left {
   margin-right: 64px;
 }
 
-.sec2-left h3 {
-  color: var(--dark-purple);
-  margin-bottom: 24px;
-}
-
-.sec2-left p {
-  margin-bottom: 24px;
-}
-
-.sec2-left span {
-  color: var(--purple);
-}
-
-.sec2-left .buttonStandard {
-  margin-right: 1rem;
-}
-
-.sec2-right {
-  display: flex;
-  position: relative;  
-  flex: 1 1 0%;
-  height: 100%;
-  min-height: 430px;
-  width: 100%;
-  flex-flow: column nowrap;
+.sec2 .sec-right {
+  position: relative;
 }
 
 .bnb-token,
@@ -679,13 +644,6 @@ p:nth-child(6) {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.sec2-right img {
-  width: 100%;
-  max-width: 428px;
-  height: 100%;
-  max-height: 428px;
 }
 
 .bnb-token {
@@ -735,7 +693,7 @@ p:nth-child(6) {
 .cake-token {
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
-  animation-delay: 0.33s;
+  animation-delay: 0.66s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-fill-mode: none;
@@ -750,7 +708,110 @@ p:nth-child(6) {
   }
 
   50% {
-    transform: translate(6px, 5px);
+    transform: translate(5px, 10px);
+  }
+}
+
+/* -- DIVIDER 2 --*/
+.divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.divider2 {
+  position: absolute;
+  fill: var(--white);
+}
+
+/* -- SEC 3 > EARN PASSIVE --*/
+.sec3 {
+  background: var(--gradient-pink-blue);
+  position: relative;
+}
+
+.sec3 .sec-right {
+  margin-left: 64px;
+}
+
+.sec3 .sec-left {
+  position: relative;
+}
+
+.pie-chart,
+.stocks-chart,
+.folder-cake-token {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pie-chart {
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.66s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: pie-chart;
+}
+
+@keyframes pie-chart {
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(3px, 15px);
+  }
+}
+
+.stocks-chart {
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.66s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: stocks-chart;
+}
+
+@keyframes stocks-chart {
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(3px, 15px);
+  }
+}
+
+.folder-cake-token {
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.33s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: folder-cake-token;
+}
+
+@keyframes folder-cake-token {
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(3px, 15px);
   }
 }
 
@@ -771,12 +832,76 @@ p:nth-child(6) {
   opacity: 0.65;
 }
 
-.wrapper {
+/* -- divider --*/
+.divider {
+  width: 100%;
+  height: 100%;
+  max-height: 48px;
+}
+
+/* 2 column sections */
+.sec-wrapper {
   padding: 6rem 1.5rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+}
+
+.sec-container {
+  width: 100%;
+  max-width: 968px;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-left {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 0%;
+  justify-content: center;
+  height: 100%;
+  min-height: 430px;
+  width: 100%;
+}
+
+.sec-right {
+  display: flex;  
+  flex: 1 1 0%;
+  height: 100%;
+  min-height: 430px;
+  width: 100%;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.sec-img {
+  width: 100%;
+  max-width: 428px;
+  height: 100%;
+  max-height: 428px;
+}
+
+.sec-h {
+  color: var(--dark-purple);
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.sec-p {
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.sec-h span {
+  color: var(--purple);
+}
+
+.sec-button {
+  margin-right: 1rem;
 }
 
 .link {
