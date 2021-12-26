@@ -731,7 +731,16 @@
   transition-duration: 0.3s;
   color: var(--hover-color);
   }
-
+  
+.fakeNav{
+  display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
 
  
   
