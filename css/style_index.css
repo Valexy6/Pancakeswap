@@ -741,8 +741,17 @@
     flex-direction: column;
     margin-bottom: 32px;
 }
-
- 
+  .fakeNav {
+    background-color: white; /*da rimuovere*/
+    border-bottom: 1px solid var(--grey-border);
+    height: 3.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: 60px;
+  }
   
   /* -- RESOPNSIVE -- */
   @media screen and (min-width: 967px) {
