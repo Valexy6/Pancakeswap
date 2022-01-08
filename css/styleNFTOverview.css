@@ -350,6 +350,52 @@ nav {
     }
 }
 
+.switchLinkNFT {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.linkOverviewNFT {
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.linkOverviewNFT a {
+    color: var(--light-purple);
+    text-decoration: none;
+}
+
+.linkOverviewNFT:hover {
+    background: rgb(239, 244, 245);
+}
+
+.linkCollectionsNFT {
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.linkCollectionsNFT a {
+    color: var(--light-purple);
+    text-decoration: none;
+}
+
+
+.linkCollectionsNFT:hover {
+    background: rgb(239, 244, 245);
+}
+
 .firstPartNFT {
     background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
     margin-bottom: -20px;

@@ -357,24 +357,51 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 
 .linkOverviewNFT {
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.linkOverviewNFT a {
+    color: var(--light-purple);
+}
+
+.linkOverviewNFT:hover {
+    background: rgb(239, 244, 245);
+}
+
+.linkCollectionsNFT {
     padding-right: 30px;
     font-size: 16px;
     font-weight: 600;
     position: relative;
     display: flex;
     align-items: center;
-    color: rgb(122, 110, 170);
+}
+
+.linkCollectionsNFT a {
+    color: var(--light-purple);
 }
 
 
-.linkOverviewNFT:hover {
+.linkCollectionsNFT:hover {
     background: rgb(239, 244, 245);
 }
 
-.linkOverviewNFT:active {
+
+
+
+
+
+
+/* .linkOverviewNFT:active {
     color: rgb(118, 69, 217);
 }
 
@@ -386,12 +413,15 @@ nav {
     width: 100%;
     background-color: rgb(31, 199, 212);
     border-radius: 2px 2px 0px 0px;
-}
+} */
 
 /* Da aggiungere l'altro link */
 
-.linkCollectionsNFT {
+/* .linkCollectionsNFT {
     color: rgb(118, 69, 217);
+    border-bottom-left-radius: 2px 2px 0px 0px rgb(31, 199, 212);
+
+
 
 }
 
@@ -400,21 +430,13 @@ nav {
 
 
 
-}
-
-
-
-
-
-
-
-
+} */
 
 .collections {
     background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .titleCollections {
@@ -464,7 +486,7 @@ nav {
 
 
 
-.collection {
+.collectionTable {
     color: var(--purple);
     font-weight: 600;
     line-height: 1.5;
@@ -472,7 +494,7 @@ nav {
     font-size: 12px;
 }
 
-.volume {
+.volumeTable {
     color: var(--purple);
     font-weight: 600;
     line-height: 1.5;
@@ -481,7 +503,7 @@ nav {
 }
 
 
-.items {
+.itemsTable {
     color: var(--purple);
     font-weight: 600;
     line-height: 1.5;
@@ -489,7 +511,7 @@ nav {
     font-size: 12px;
 }
 
-.supply {
+.supplyTable {
     color: var(--purple);
     font-weight: 600;
     line-height: 1.5;
