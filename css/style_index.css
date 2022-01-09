@@ -734,23 +734,29 @@
   
 .fakeNav{
   display: flex;
-    width: 100%;
+    width: 60%;
     align-items: center;
-    position: relative;
+   
+    margin: 5%;
+    
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 32px;
 }
-  .fakeNav {
-    background-color: white; /*da rimuovere*/
-    border-bottom: 1px solid var(--grey-border);
-    height: 3.5rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+ 
+  .cardcontainer {
+  margin: 5%;
+  margin-top: -100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 90%;
+  height:1000px;
+  background-color: red;
+  }
+
+  .firstcard {
     
-    margin-top: 60px;
   }
   
   /* -- RESOPNSIVE -- */
