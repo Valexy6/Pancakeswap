@@ -350,13 +350,27 @@ nav {
     }
 }
 
+/* Link per spostarsi da una pagina all'altra */
+
 .switchLinkNFT {
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
     margin-bottom: 10px;
+}
+
+.underBar::after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    height: 4px;
+    width: 100%;
+    background-color: rgb(31, 199, 212);
+    border-radius: 2px 2px 0px 0px;
+    margin-top: 5px;
 }
 
 .linkOverviewNFT {
