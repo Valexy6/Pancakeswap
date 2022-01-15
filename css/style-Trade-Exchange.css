@@ -1,5 +1,5 @@
 :root {
-  --hover-color: rgb(31, 199, 212, 0.65);
+  --hover-color: rgb(31, 199, 212, 065);
   --active-color: rgb(31, 199, 212, 0.85);
   --yellow: rgb(255, 178, 55);
   --white: rgb(250, 249, 250);
@@ -330,7 +330,6 @@ nav {
   flex-grow: 1;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: rgb(133 133 133 / 10%) 0px -2px 0px -8px inset;
-  overflow-x: scroll;
   -webkit-box-pack: center;
   justify-content: center;
   padding-left: 0px;
@@ -486,7 +485,7 @@ nav {
   box-shadow: none;
 }
 
-.button-left-card-1 svg {
+.button-left-card-1 img {
   align-self: center;
   fill: var(--cyan);
   flex-shrink: 0;
@@ -588,7 +587,7 @@ nav {
   box-shadow: none;
 }
 
-.button-zoom svg:hover {
+.button-zoom img:hover {
   opacity: 0.65;
 }
 
