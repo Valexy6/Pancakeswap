@@ -835,7 +835,7 @@ p:nth-child(6) {
   color: var(--purple);
 }
 
-.switcher {
+.switcher-earn {
   width: 48px;
   display: flex;
   justify-content: center;
@@ -845,22 +845,39 @@ p:nth-child(6) {
   height: 80px;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .earn-data-grid {
+  position: absolute;
+  top: 0px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 32px;
   height: 100%;
+  /* transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; */
+  /* transition-property: opacity, margin-top, all;
+  transition-duration: 0.7s, 0s, 0.7s;
+  transition-timing-function: ease, ease, ease-out;
+  transition-delay: 0s, 0s, 0s; */
 }
 
-.earn-data-grid-slide {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 32px;
-  height: 100%;
+.earn-table-hide {
+  opacity: 0;
   margin-top: 50%;
-  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+  transition-property: opacity, margin-top;
+  transition-duration: 2s, 1s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0.7s, 0.5s;
+}
+
+.earn-table-show {
+  opacity: 1;
+  margin-top: 0px;
+  transition-property: opacity, margin-top;
+  transition-duration: 2s, 0.7s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0.2s, 0.2s;
 }
 
 .earn-data-column {
@@ -1736,6 +1753,13 @@ footer {
   50% {
     transform: translate(6px, 17px);
   }
+}
+
+/* hide/show switcher */
+
+.hide {
+  display: none;
+  /* transition: width 2s; */
 }
 
 /* -- TYPOGRAPHY -- */

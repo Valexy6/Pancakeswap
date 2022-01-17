@@ -11,7 +11,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Kanit"
     />
-    <script type="text/javascript" src="js/index.js"></script>
+    <!-- <script type="text/javascript" src="js/index.js"></script> -->
+    
   </head>
 
   <body>
@@ -665,8 +666,8 @@
 
         <div class="earn-data-container">
           <div class="earn-data-title">
-            <h3 class="h3">Top <span>Syrup Pools</span></h3>
-            <button type="button" class="no-style-button icons-button switcher"><img src="assets/icons/arrow.svg" /></button>
+            <h3 class="h3">Top <span id="earn-table-title">Syrup Pools</span></h3>
+            <button type="button" class="no-style-button icons-button switcher-earn"><img id='switch-icon' src="assets/icons/arrow.svg" /></button>
           </div>
 
           <div class="earn-data">
@@ -702,7 +703,7 @@
               </div>
             </div>
 
-            <div id="grid-data2" class="earn-data-grid">
+            <div id="grid-data2" class="earn-data-grid earn-table-hide">
               <div class="earn-data-column">
                 <p class="p-small">Stake CAKE - Earn CCAR</p>
                 <p class="p-dark">104.009%</p>
@@ -1238,5 +1239,6 @@
 
       </div>
     </footer>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

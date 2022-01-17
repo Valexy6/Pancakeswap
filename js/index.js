@@ -13,11 +13,52 @@
   - cambio iniziali con selettore lingua
 */
 
-// setInterval(dataSwitcher, 6000);
+
+
+//switching table
+setInterval(dataSwitcher, 6000);
+
+function dataSwitcher() {
+  const earnTableTitle = document.querySelector('#earn-table-title')
+  const grid1 = document.querySelector('#grid-data1');
+  const grid2 = document.querySelector('#grid-data2');
+  
+  if(grid1.className === 'earn-data-grid earn-table-hide') {
+    earnTableTitle.textContent = 'Farms';
+    grid1.className = 'earn-data-grid earn-table-show';
+  } else {
+    earnTableTitle.textContent = 'Syrup Pools';
+    grid1.className = 'earn-data-grid earn-table-hide';
+  }
+
+  if(grid2.className === 'earn-data-grid earn-table-show') {
+    earnTableTitle.textContent = 'Farms';
+    grid2.className = 'earn-data-grid earn-table-hide';
+  } else {
+    earnTableTitle.textContent = 'Syrup Pools';
+    grid2.className = 'earn-data-grid earn-table-show';
+  }
+}
+
+
+
+
+const switchIcon = document.querySelector('#switch-icon');
+switchIcon.addEventListener('click', dataSwitcher);
+
+
+
 
 // function dataSwitcher() {
-//     const grid1 = document.querySelector('#grid1');
-//     const grid2 = document.querySelector('#grid2');
-
-//     grid1.style
+//   const earnTableTitle = document.querySelector('#earn-table-title')
+//   const grid1 = document.querySelector('#grid-data1');
+//   const grid2 = document.querySelector('#grid-data2');
+  
+//   if(grid1.className === 'earn-data-grid hide') {
+//     earnTableTitle.textContent = 'Farms';
+//     grid1.className = 'earn-data-grid';
+//   } else {
+//     earnTableTitle.textContent = 'Syrup Pools';
+//     grid1.className = 'earn-data-grid hide';
+//   }
 // }
