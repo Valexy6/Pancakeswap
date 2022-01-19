@@ -610,7 +610,6 @@ nav {
 .main-bottom {
   display: block;
   width: 100%;
-  height: 90px;
 }
 
 .main-bottom-box {
@@ -766,7 +765,7 @@ nav {
 }
 
 .img-bottom-right {
-  max-height: 108px;
+  height: 108px;
   max-width: 160px;
   position: relative;
   width: 100%;
