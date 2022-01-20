@@ -7,7 +7,8 @@
     - background win millions
     - background in earn section
     - bacground e testi in used by
-  - tabella dinamica in earn section
+
+  V - tabella dinamica in earn section
   - modal per setting
   - modal per connect wallet
   - cambio iniziali con selettore lingua
@@ -25,40 +26,15 @@ function dataSwitcher() {
   
   if(grid1.className === 'earn-data-grid earn-table-hide') {
     earnTableTitle.textContent = 'Farms';
-    grid1.className = 'earn-data-grid earn-table-show';
   } else {
     earnTableTitle.textContent = 'Syrup Pools';
-    grid1.className = 'earn-data-grid earn-table-hide';
   }
 
-  if(grid2.className === 'earn-data-grid earn-table-show') {
-    earnTableTitle.textContent = 'Farms';
-    grid2.className = 'earn-data-grid earn-table-hide';
-  } else {
-    earnTableTitle.textContent = 'Syrup Pools';
-    grid2.className = 'earn-data-grid earn-table-show';
-  }
+  grid1.classList.toggle('earn-table-show');
+  grid1.classList.toggle('earn-table-hide');
+  grid2.classList.toggle('earn-table-show');
+  grid2.classList.toggle('earn-table-hide');
 }
-
-
-
 
 const switchIcon = document.querySelector('#switch-icon');
 switchIcon.addEventListener('click', dataSwitcher);
-
-
-
-
-// function dataSwitcher() {
-//   const earnTableTitle = document.querySelector('#earn-table-title')
-//   const grid1 = document.querySelector('#grid-data1');
-//   const grid2 = document.querySelector('#grid-data2');
-  
-//   if(grid1.className === 'earn-data-grid hide') {
-//     earnTableTitle.textContent = 'Farms';
-//     grid1.className = 'earn-data-grid';
-//   } else {
-//     earnTableTitle.textContent = 'Syrup Pools';
-//     grid1.className = 'earn-data-grid hide';
-//   }
-// }
