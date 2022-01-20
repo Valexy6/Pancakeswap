@@ -335,12 +335,22 @@ nav {
   padding-left: 0px;
 }
 
-.exchange-switch {
-  margin-right: 20px;
+.underBar {
+  position: relative;
 }
 
-.exchange-switch-2 {
-  position: relative;
+.underBar::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 4px;
+  width: 100%;
+  background-color: var(--cyan);
+  border-radius: 2px 2px 0px 0px;
+}
+
+.exchange-switch {
+  margin-right: 20px;
 }
 
 .exchange-link {
@@ -360,9 +370,6 @@ nav {
   margin-right: 20px;
 }
 
-.liquidity-switch-2 {
-  position: relative;
-}
 
 .liquidity-link {
   position: relative;
