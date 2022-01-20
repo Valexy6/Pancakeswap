@@ -1358,6 +1358,10 @@ footer {
   padding: 0px 24px;
 }
 
+button[name=lang-selector] img {
+  margin-right: 0.5rem;
+}
+
 .f-row3 .lang-selector {
   transform: translate(-50%, 0px);
   left: 100%;
@@ -1375,7 +1379,7 @@ footer {
 }
 
 .f-row3 .pancakes-link a {
-  color: rgb(184, 173, 210);
+  color: var(--light-purple);
 }
 
 .f-row3 > div:last-child img{
@@ -1483,6 +1487,14 @@ footer {
 .moon-dark-on {
   align-self: center;
   fill: rgb(154, 106, 255);
+}
+
+/* language selector initials */
+.lang-sel-typo {
+  color: var(--light-purple);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* -- UTILITIES -- */

@@ -38,3 +38,16 @@ function dataSwitcher() {
 
 const switchIcon = document.querySelector('#switch-icon');
 switchIcon.addEventListener('click', dataSwitcher);
+
+// initials language selector footer
+(function langSelectorInitials() {
+  const initials = document.querySelector('.lang-sel-typo');
+  const langBtn = document.querySelectorAll('button[name=lang]');
+    
+  langBtn.forEach(item => {
+    item.addEventListener('click', (event) => {
+      event.preventDefault();
+      initials.innerHTML = item.dataset.langInitials.toUpperCase();
+    })
+  })
+})();
