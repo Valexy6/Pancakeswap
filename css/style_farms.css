@@ -835,6 +835,8 @@ left: 100px;
  
   }
 
+   /* CARD STYLE */
+
   .cardstyle {
     display: flex;
     flex-direction: column;
@@ -991,34 +993,19 @@ justify-content: space-between;
     width: 100%;
   }
 
-  .firstcard {
-    grid-row: 1;
-    grid-column: 1;
+  .detailsBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cyan);
+    
   }
 
-  .secondcard {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .thirdcard {
-    grid-column: 3;
-    grid-row: 1;
-  }
-  .fourthcard {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .fifthcard {
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .sixthcard {
-    grid-column: 3;
-    grid-row: 2;
-  }
+
+  
   /* footer section */
   footer {
-    background: rgb(39, 38, 44);
+    background-color:rgb(39, 38, 44);
     display: flex;
     justify-content: center;
     padding: 56px 40px 32px;
