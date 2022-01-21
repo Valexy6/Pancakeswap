@@ -11,7 +11,7 @@
   V - tabella dinamica in earn section
   - modal per setting
   - modal per connect wallet
-  - cambio iniziali con selettore lingua
+  V - cambio iniziali con selettore lingua
 */
 
 
