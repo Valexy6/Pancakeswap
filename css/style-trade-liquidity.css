@@ -895,3 +895,30 @@ footer {
 .f-row3>div:last-child img {
   margin-left: 8px;
 }
+
+/* -- RESOPNSIVE -- */
+@media screen and (min-width: 967px) {
+  .mobile-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  .desktop-logo {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .button-wallet {
+    white-space: pre-wrap;
+  }
+
+  .navlink-left {
+    display: none;
+  }
+
+  .pancakes-link{
+    display: none;
+  }
+}
