@@ -751,7 +751,30 @@
   transition-duration: 0.3s;
   color: var(--hover-color);
   }
+ 
+  /* FIXING SORT BY  */
+.sort-by-head {
+  position: relative;
   
+}
+
+.sortFakeContainer {
+  cursor: pointer;
+  width: 10rem; /* width change to 100% when in his layout div */
+  height: 40px;
+  position: relative;
+  background-color:  rgb(238, 234, 244);;
+  border-radius: 16px;
+  border: 1px solid rgb(215, 202, 236);
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  outline: none;
+  color: rgb(40, 13, 95);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif;
+  left: 550px;
+}
+
 .fakeNav{
   display: inline-flex;
   width: 100%;
@@ -779,7 +802,7 @@ left: 100px;
 }
 .livebutton {
   position: relative;
-  left: 100px;
+  left: -60px;
   background-color: rgb(238, 234, 244);
   border-radius: 16px;
   
@@ -819,31 +842,22 @@ left: 100px;
 
 .search-field {
   position: relative;
- left: 550px;
-  
-  
+ left: 370px;
 }
-  .cardcontainer {
+.sortFakeContainer {
+  left: 490px;
+}
+
+   /* CARD STYLE */
+  
+   .cardcontainer {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: -30px;
-  /* display: grid;
-  column-gap: 1px;
- padding-left: 60px;
- padding-right: 100px;
-  
-  /* grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2,1fr);
-  width: 80%;
-   */ 
-  
- 
   }
-
-   /* CARD STYLE */
-
+  
   .cardstyle {
     display: flex;
     flex-direction: column;
@@ -1016,10 +1030,7 @@ justify-content: space-between;
     display: block;
   text-align: center; 
   }
-
-  .fakeline {
-    
-  }
+   
   
   /* footer section */
   footer {

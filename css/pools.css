@@ -14,6 +14,30 @@
     --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
   }
 
+/* FIXING SORT BY  */
+.sort-by-head {
+    position: relative;
+    
+}
+
+.sortFakeContainer {
+    cursor: pointer;
+    width: 10rem; /* width change to 100% when in his layout div */
+    height: 40px;
+    position: relative;
+    background-color:  rgb(238, 234, 244);;
+    border-radius: 16px;
+    border: 1px solid rgb(215, 202, 236);
+    box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+    outline: none;
+    color: rgb(40, 13, 95);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Kanit", sans-serif;
+    left: 490px;
+}
+
+
 .firstcontainer > h3 > .farms {
     text-decoration: none;
     color: gray;
@@ -120,4 +144,197 @@ padding-left: 6px;
     height: 48px;
     opacity: 1;
     margin-top: var(--margin-top);
+}
+
+    /* POOLS COLLECTION TABLE */
+hr {
+    border-top: 1px solid rgb(218, 209, 209);
+}
+
+.poolsBox {
+ position: relative;
+ border-top-left-radius: 25px;
+ border-top-right-radius: 25px;
+ border-bottom-left-radius: 25px;
+ border-bottom-right-radius: 25px;
+ background-color: rgb(249, 248, 250);
+ margin-top: 10px;
+ margin-left: 6%;
+ margin-right: 6%;
+ width: 88%;
+ height: 100%;
+ 
+ margin-bottom: 100px;
+}
+
+.singleCakeLine {
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    width: 100%;
+    height: 92px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px;
+}
+
+.first-singleCakeLine {
+        display: flex;
+        flex-flow: row;
+        position: relative;
+        width: 100%;
+        height: 92px;
+        background-color:transparent;
+        cursor: pointer; 
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border: 1px;
+}
+
+.last-singleCakeLine {
+    display: flex;
+    flex-flow: row;
+    position: relative;
+        width: 100%;
+        height: 92px;
+        background-color:transparent;;
+        cursor: pointer; 
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 1px rgb(255, 255, 255);
+}
+
+
+
+/* FIXING IMAGES  */
+.cakeStake {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    
+}
+
+
+
+.cakeStake > .imageresolution-2 {width: 48px;height: 48px;margin: 24px;}
+.cakeStake > .imageresolution-3 {
+    position: absolute;
+   width: 24px;
+   height: 24px;
+   margin: 52px;
+   border: 1px solid rgb(95, 88, 88);
+   border-radius: 24px;
+}
+
+.cakeStake > h3 {
+  display:block;
+  margin-left: 80px;
+  margin-top: 22px;
+  font-size: 18px;
+  color: rgb(40, 13, 95);
+}
+.cakeStake > p {
+    font-size: 12.5px;
+    margin-left: 80px;
+    margin-top: -2px;
+    color: rgb(119, 119, 121);
+    font-weight: 400;
+     line-height: 1.1;
+     font-size: 12px;
+  
+}
+
+.cakeProfit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cakeProfit > p {
+    color: rgb(119, 119, 121);
+    font-weight: 400;
+     line-height: 1.1;
+     font-size: 13px;
+     margin-top: 8px;
+}
+
+.cakeProfit > p > span {
+    color: rgb(119, 114, 114);
+}
+.ifoCredit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+}
+.ifoCredit > p{
+    color: rgb(119, 119, 121);
+    font-weight: 400;
+     line-height: 1.1;
+     font-size: 13px;
+     margin-top: 8px;
+}
+
+.ifoCredit > p > span {
+    color: rgb(119, 114, 114);
+}
+
+.apy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 180px;
+}
+
+.apy > p {
+    color: rgb(119, 119, 121);
+    font-weight: 400;
+     line-height: 1.1;
+     font-size: 13px;
+     margin-top: 8px;
+}
+
+.apy > p > span {
+    font-size: 16px;
+    color: rgb(40, 13, 95);
+    font-weight:400;
+}
+.totalStaked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+}
+
+.totalStaked > p {
+    color: rgb(119, 119, 121);
+    font-weight: 400;
+     line-height: 1.1;
+     font-size: 13px;
+     margin-top: 8px;
+}
+
+.totalStaked > p > span {
+    font-size: 16px;
+    color: rgb(40, 13, 95);
+    font-weight:400;
+}
+
+.showDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cyan);
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+.showDetails > img {
+    width: 24px;
+    color: var(--cyan);
 }
