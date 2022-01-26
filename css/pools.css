@@ -1,0 +1,123 @@
+:root {
+    --hover-color: rgb(31, 199, 212, 0.65);
+    --active-color: rgb(31, 199, 212, 0.85);
+    --yellow: rgb(255, 178, 55);
+    --white: rgb(250, 249, 250);
+    --purple: rgb(118, 69, 217);
+    --dark-purple: rgb(40, 13, 95);
+    --light-purple: rgb(122, 110, 170);
+    --cyan: rgb(31, 199, 212);
+    --grey: rgb(239, 244, 245);
+    --grey-border: rgb(231, 227, 235);
+    --fuksia: rgb(237, 75, 158);
+    --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+    --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+  }
+
+.firstcontainer > h3 > .farms {
+    text-decoration: none;
+    color: gray;
+}
+
+.containerpools {
+ display: block;
+ height: 1000px;
+ width: 80%;
+ background-color: red;
+ margin-left: 10%;
+ border-radius: 24px;
+}
+
+ .rightSide {
+     display: inline-flex;
+     position: relative;
+     left: 750px;
+     bottom: 100px;
+ }
+.buttonSmall {
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(122, 110, 170);
+    color: rgb(255, 255, 255);
+}
+
+.buttonSmall:hover {
+    background-color: rgb(122, 110, 170);
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    opacity: 0.65;
+
+}
+
+.buttonSmall > img{
+padding-left: 6px;
+}
+
+.autoCakePlace {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    border-radius: 24px;
+    background-color: white;
+    height: 130px;
+    width: 260px;
+    bottom: 30px;
+    left: 28px;
+    padding: 14px;
+}
+
+.autoCakePlace > h4 {color: rgb(118, 69, 217);; margin-bottom: 20px;margin-right: 60px;}
+
+.numberButton {
+    display: flex;
+    flex-flow: column;
+}
+
+.numberButton > h3 {
+    position: relative;
+    bottom: 10px;
+}
+
+.numberButton  {
+    position: relative;
+    color: var(--dark-purple);
+}
+
+.numberButton  > p {
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+    color: rgb(119, 114, 114);
+}
+.numberButton > h3 >  .buttonSmall {
+    background-color: var(--cyan);
+    position: relative;
+    width: 75px;
+    height: 30px;
+    left: 60px;
+    top: 5px;
+    
+}
+.buttonLarge:hover {
+    background-color: white;
+}
+
+.buttonClaim {
+    border-radius: 16px;
+    border: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    background-color: var(--robins-color);
+    color: white;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: var(--pointer);
+    letter-spacing: 0.03em;
+    line-height: 1;
+    width: 108px;
+    height: 48px;
+    opacity: 1;
+    margin-top: var(--margin-top);
+}

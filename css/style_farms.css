@@ -699,10 +699,17 @@
   }
 
   .firstcontainer > h3 > a {
-    font-size: 17px;
+    font-size: 16px;
     color: rgb(118, 69, 217);
-    text-decoration: underline  4px solid var(--cyan);
+    text-decoration: underline  3px solid var(--cyan) ;
+    padding: 4px;
+    
   }
+
+  .firstcontainer > h3 > .pools {
+    text-decoration: none;
+    color: gray;
+}
 
   .firstcontainer > h3 > a:hover {
     background: 
@@ -993,15 +1000,26 @@ justify-content: space-between;
     width: 100%;
   }
 
-  .detailsBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--cyan);
+  .buttonDetails {
+    position: relative;
+    border: 0px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
     
+    bottom: 20px;
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+    display: block;
+  text-align: center; 
   }
 
-
+  .fakeline {
+    
+  }
   
   /* footer section */
   footer {
