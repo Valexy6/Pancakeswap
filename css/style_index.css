@@ -45,6 +45,30 @@
 }
 
 /* -- NAVBAR -- */
+nav {
+  position: fixed;
+  left: 0px;
+  border-bottom: 1px solid var(--grey-border);
+  height: 3.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 1rem;
+  width: 100%;
+  background-color: white;
+  transition: top 0.2s ease 0s;
+}
+
+.nav-position-hide {
+  top: -56px;  
+}
+
+.nav-position-show{
+  top: 0px;
+  z-index: 20;  
+}
+
 /* -- logo -- */
 /* eyes animation */
 .logo-container {
@@ -80,19 +104,6 @@
 /* logo mobile */
 .mobile-logo {
   width: 32px;
-}
-
-
-/* -- nav link -- */
-nav {
-  background-color: white; /*da rimuovere*/
-  border-bottom: 1px solid var(--grey-border);
-  height: 3.5rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 1rem;
 }
 
 /* header left */
