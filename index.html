@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="stylesheet" href="css/reset-style.css" type="text/css" />
+    <link rel="stylesheet" href="css/style-base-nav-footer.css" type="text/css" />
     <link rel="stylesheet" href="css/style_index.css" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit" />
   </head>
@@ -16,7 +17,7 @@
       <nav class="nav-position-show">
         <div class="header-left">
           <div>
-            <a href="#" class="logo-container">
+            <a href="index.html" class="logo-container">
               <svg
                 viewBox="0 0 160 26"
                 class="desktop-logo"
@@ -136,41 +137,41 @@
           <div class="navlink-left">
             <div class="dropdown">
               <div class="dropbtn">
-                <button type="button">Trade</button>
+                <button class="navlink" type="button">Trade</button>
               </div>
               <div class="dropdown-content">
-                <a href="#">Exchange</a>
-                <a href="#">Liquidity</a>
+                <a class="navlink" href="trade-exchange.html">Exchange</a>
+                <a class="navlink" href="trade-liquidity.html">Liquidity</a>
               </div>
             </div>
 
             <div class="dropdown">
               <div class="dropbtn">
-                <button type="button">Earn</button>
+                <button class="navlink" type="button">Earn</button>
               </div>
               <div class="dropdown-content">
-                <a href="#">Farms</a>
-                <a href="#">Pools</a>
+                <a class="navlink" href="#">Farms</a>
+                <a class="navlink" href="#">Pools</a>
               </div>
             </div>
 
             <div class="dropdown">
               <div class="dropbtn">
-                <button type="button">Win</button>
+                <button class="navlink" type="button">Win</button>
               </div>
               <div class="dropdown-content">
-                <a href="#">Perdiction (BETA)</a>
-                <a href="#">Lottery</a>
+                <a class="navlink" href="#">Perdiction (BETA)</a>
+                <a class="navlink" href="#">Lottery</a>
               </div>
             </div>
 
             <div class="dropdown">
               <div class="dropbtn">
-                <button type="button">NFT</button>
+                <button class="navlink" type="button">NFT</button>
               </div>
               <div class="dropdown-content">
-                <a href="#">Overview</a>
-                <a href="#">Collections</a>
+                <a class="navlink" href="#">Overview</a>
+                <a class="navlink" href="#">Collections</a>
               </div>
             </div>
 
@@ -181,14 +182,14 @@
                 </button>
               </div>
               <div class="dropdown-content">
-                <a href="#">Info</a>
-                <a href="#">IFO</a>
-                <a href="#">Voting</a>
+                <a  class="navlink"href="#">Info</a>
+                <a  class="navlink"href="#">IFO</a>
+                <a  class="navlink"href="#">Voting</a>
                 <hr />
-                <a href="#">Leaderboard</a>
+                <a  class="navlink"href="#">Leaderboard</a>
                 <hr />
-                <a href="#">Blog<img src="assets/icons/link.svg" /></a>
-                <a href="#">Docs<img src="assets/icons/link.svg" /></a>
+                <a  class="navlink"href="#">Blog<img src="assets/icons/link.svg" /></a>
+                <a  class="navlink"href="#">Docs<img src="assets/icons/link.svg" /></a>
               </div>
             </div>
           </div>
@@ -197,10 +198,8 @@
         <!--right side-->
         <div class="header-right">
           <div class="pancakes-link">
-            <a href="#" target="_blanck"
-              ><img src="assets/icons/pancakes.svg" />$11.926</a
-            >
-            <!--link to trade-->
+            <a href="trade-exchange.html" target="_blanck">
+              <img src="assets/icons/pancakes.svg" />$11.926</a>
           </div>
 
           <div class="language-container">
@@ -1234,6 +1233,7 @@
 
       </div>
     </footer>
+    <script type="text/javascript" src="js/base.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

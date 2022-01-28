@@ -13,26 +13,9 @@
   - modal per connect wallet
   V - cambio iniziali con selettore lingua
   V - sticky menu
+  - bold per pagina selezionata
 */
 
-//menu sticky menu
-(function semiStickyMenu() {
-  const nav = document.querySelector('nav');
- 
-  window.addEventListener('wheel', (event) => {
-    let directionScroll = event.deltaY
-
-    if (directionScroll >= 0) {
-      scrolling = false;
-      nav.classList.add('nav-position-hide');
-      nav.classList.remove('nav-position-show');
-    } else {
-      scrolling = false;
-      nav.classList.remove('nav-position-hide');
-      nav.classList.add('nav-position-show');
-    }
-  });
-})();
 
 //switching table
 setInterval(dataSwitcher, 6000);
@@ -56,16 +39,3 @@ function dataSwitcher() {
 
 const switchIcon = document.querySelector('#switch-icon');
 switchIcon.addEventListener('click', dataSwitcher);
-
-// initials language selector footer
-(function langSelectorInitials() {
-  const initials = document.querySelector('.lang-sel-typo');
-  const langBtn = document.querySelectorAll('button[name=lang]');
-    
-  langBtn.forEach(item => {
-    item.addEventListener('click', (event) => {
-      event.preventDefault();
-      initials.innerHTML = item.dataset.langInitials.toUpperCase();
-    })
-  })
-})();
