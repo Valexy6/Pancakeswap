@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trade exchange</title>
     <link rel="stylesheet" href="css/reset-style.css" type="text/css" />
+    <link rel="stylesheet" href="css/style-base-nav-footer.css" type="text/css" />
     <link rel="stylesheet" href="css/style-Trade-Exchange.css" type="text/css" />
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit" />
   </head>
@@ -13,10 +14,10 @@
   <body>
     <header>
       <!--NAVBAR-->
-      <nav>
+      <nav class="nav-position-show">
         <div class="header-left">
           <div>
-            <a href="#" class="logo-container">
+            <a href="index.html" class="logo-container">
               <svg
                 viewBox="0 0 160 26"
                 class="desktop-logo"
@@ -128,67 +129,67 @@
                   d="M23.1111 18.9091C23.1111 20.248 22.3875 21.3333 21.4949 21.3333C20.6024 21.3333 19.8788 20.248 19.8788 18.9091C19.8788 17.5702 20.6024 16.4849 21.4949 16.4849C22.3875 16.4849 23.1111 17.5702 23.1111 18.9091Z"
                   fill="#633001"
                 ></path>
-            </svg>
+              </svg>
             </a>
           </div>
 
-          <!-- left side -->
+          <!--left side-->
           <div class="navlink-left">
             <div class="dropdown">
               <div class="dropbtn">
-                <button type="button">Trade</button>
+                <a href="trade-exchange.html" class="navlink">Trade</a>
               </div>
               <div class="dropdown-content">
-                <a href="#">Exchange</a>
-                <a href="#">Liquidity</a>
+                <a class="navlink" href="trade-exchange.html">Exchange</a>
+                <a class="navlink" href="trade-liquidity.html">Liquidity</a>
               </div>
             </div>
 
             <div class="dropdown">
               <div class="dropbtn">
-                <button type="button">Earn</button>
+                <a href="#" class="navlink">Earn</a>
               </div>
               <div class="dropdown-content">
-                <a href="#">Farms</a>
-                <a href="#">Pools</a>
+                <a class="navlink" href="#">Farms</a>
+                <a class="navlink" href="#">Pools</a>
               </div>
             </div>
 
             <div class="dropdown">
               <div class="dropbtn">
-                <button type="button">Win</button>
+                <a href="#" class="navlink">Win</a>
               </div>
               <div class="dropdown-content">
-                <a href="#">Perdiction (BETA)</a>
-                <a href="#">Lottery</a>
+                <a class="navlink" href="#">Perdiction (BETA)</a>
+                <a class="navlink" href="#">Lottery</a>
               </div>
             </div>
 
             <div class="dropdown">
               <div class="dropbtn">
-                <button type="button">NFT</button>
+                <a href="#" class="navlink">NFT</a>
               </div>
               <div class="dropdown-content">
-                <a href="#">Overview</a>
-                <a href="#">Collections</a>
+                <a class="navlink" href="#">Overview</a>
+                <a class="navlink" href="#">Collections</a>
               </div>
             </div>
 
             <div class="dropdown">
               <div class="dropbtn">
-                <button type="button">
+                <a href="#" class="navlink">
                   <img class="dot-color" src="assets/icons/dotdotdot.svg" />
-                </button>
+                </a>
               </div>
               <div class="dropdown-content">
-                <a href="#">Info</a>
-                <a href="#">IFO</a>
-                <a href="#">Voting</a>
+                <a  class="navlink"href="#">Info</a>
+                <a  class="navlink"href="#">IFO</a>
+                <a  class="navlink"href="#">Voting</a>
                 <hr />
-                <a href="#">Leaderboard</a>
+                <a  class="navlink"href="#">Leaderboard</a>
                 <hr />
-                <a href="#">Blog<img src="assets/icons/link.svg" /></a>
-                <a href="#">Docs<img src="assets/icons/link.svg" /></a>
+                <a  class="navlink"href="#">Blog<img src="assets/icons/link.svg" /></a>
+                <a  class="navlink"href="#">Docs<img src="assets/icons/link.svg" /></a>
               </div>
             </div>
           </div>
@@ -197,10 +198,8 @@
         <!--right side-->
         <div class="header-right">
           <div class="pancakes-link">
-            <a href="#" target="_blanck"
-              ><img src="assets/icons/pancakes.svg" />$11.926</a
-            >
-            <!--link to trade-->
+            <a href="trade-exchange.html" target="_blanck">
+              <img src="assets/icons/pancakes.svg" />$11.926</a>
           </div>
 
           <div class="language-container">
@@ -536,8 +535,13 @@
 
         <div class="f-row3">
           <div>
+<<<<<<< HEAD
             <div class="switcher">
               <div class="switcher"><!-- js change class (switcher-dark-on) in darkmode -->
+=======
+            <!-- switcher night version -->
+            <div class="switcher"><!-- js change class (switcher-dark-on) in darkmode -->
+>>>>>>> develop
                 <input type="checkbox" class="switcher-input">
                 <div class="switcher-sun-container active-border"><!-- js change class (sun-container-dark) in darkmode -->
                   <div class="switcher-sun-wrap">
@@ -615,83 +619,86 @@
                   </svg>
                 </div>
               </div>
+<<<<<<< HEAD
             </div>
+=======
+>>>>>>> develop
 
             <div class="language-container">
-              <button class="icons-button no-style-button" type="button">
+              <button name="lang-selector" class="icons-button no-style-button" type="button">
                 <img src="assets/icons/language.svg" />
+                <p class="lang-sel-typo">EN</p>
               </button>
 
               <div class="lang-selector">
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">
                   العربية
                 </button>
-                <button class="lang no-style-button" type="button">বাংলা</button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">বাংলা</button>
+                <button name="lang" class="lang no-style-button" type="button" data-lang-initials="en">
                   English
                 </button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">
                   Deutsch
                 </button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">
                   Ελληνικά
                 </button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button" data-lang-initials="es">
                   Español
                 </button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">
                   Suomalainen
                 </button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">
                   Filipino
                 </button>
-                <button class="lang no-style-button" type="button">हिंदी</button>
-                <button class="lang no-style-button" type="button">Magyar</button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">हिंदी</button>
+                <button name="lang" class="lang no-style-button" type="button">Magyar</button>
+                <button name="lang" class="lang no-style-button" type="button">
                   Bahasa Indonesia
                 </button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button" data-lang-initials="it">
                   Italiano
                 </button>
-                <button class="lang no-style-button" type="button">日本語</button>
-                <button class="lang no-style-button" type="button">한국어</button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">日本語</button>
+                <button name="lang" class="lang no-style-button" type="button">한국어</button>
+                <button name="lang" class="lang no-style-button" type="button">
                   Nederlands
                 </button>
-                <button class="lang no-style-button" type="button">Polski</button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">Polski</button>
+                <button name="lang" class="lang no-style-button" type="button">
                   Português (Brazil)
                 </button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">
                   Português
                 </button>
-                <button class="lang no-style-button" type="button">Română</button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">Română</button>
+                <button name="lang" class="lang no-style-button" type="button">
                   Русский
                 </button>
-                <button class="lang no-style-button" type="button">தமிழ்</button>
-                <button class="lang no-style-button" type="button">Türkçe</button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">தமிழ்</button>
+                <button name="lang" class="lang no-style-button" type="button">Türkçe</button>
+                <button name="lang" class="lang no-style-button" type="button">
                   Українська
                 </button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">
                   Tiếng Việt
                 </button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">
                   简体中文
                 </button>
-                <button class="lang no-style-button" type="button">
+                <button name="lang" class="lang no-style-button" type="button">
                   繁體中文
                 </button>
               </div>
             </div>
-            <!--fix language selector-->
           </div>
 
           <div>
             <div class="pancakes-link">
               <a href="#" target="_blanck"><img src="assets/icons/pancakes.svg" />$11.926</a>
-              <!--link to trade-->
+                <!--link to trade-->
             </div>
 
             <button class="button-wallet" type="button">Buy CAKE<img src="assets/icons/row.svg" /></button>
@@ -700,5 +707,6 @@
 
       </div>
     </footer>
+    <script type="text/javascript" src="js/base.js"></script>
   </body>
 </html>
