@@ -149,7 +149,6 @@ nav {
   background-color: transparent;
   color: var(--light-purple);
   font-size: 1rem;
-  font-weight: 400;
   padding: 0px 1rem;
   line-height: 1;
 }
@@ -184,7 +183,6 @@ nav {
   height: 3rem;
   color: var(--light-purple);
   font-family: "Kanit", sans-serif;
-  font-weight: 400;
   white-space: nowrap;
   padding: 0px 1rem;
 }

@@ -6,25 +6,23 @@
 
   switch (url) {
     case 'index.html':
-      if(url == 'index.html') {
-        navLinks.forEach(navLink => {
-          navLink.classList.remove('.navlink-bold');
-        })
-      };      
+      navLinks.forEach(navLink => {
+        navLink.classList.remove('navlink-bold');
+      });   
       break;
 
     case 'trade-exchange.html':
       navLinks.forEach(navLink => {
-        if(navLink.value == 'Exchange') {
-          navLink.classList.add('.navlink-bold');
+        if(navLink.textContent == 'Trade' || navLink.textContent == 'Exchange') {
+          navLink.classList.add('navlink-bold');
         }
       });
       break;
 
     case 'trade-liquidity.html':
       navLinks.forEach(navLink => {
-        if(navLink.value == 'Liquidity') {
-          navLink.classList.add('.navlink-bold');
+        if(navLink.textContent == 'Trade' || navLink.textContent == 'Liquidity') {
+          navLink.classList.add('navlink-bold');
         }
       });
       break;
@@ -44,11 +42,9 @@
     let directionScroll = event.deltaY
 
     if (directionScroll >= 0) {
-      scrolling = false;
       nav.classList.add('nav-position-hide');
       nav.classList.remove('nav-position-show');
     } else {
-      scrolling = false;
       nav.classList.remove('nav-position-hide');
       nav.classList.add('nav-position-show');
     }
