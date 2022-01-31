@@ -130,7 +130,7 @@ nav {
   font-weight: 600;
 }
 
-.dropdown{
+.dropdown {
   position: relative;
 }
 
@@ -143,7 +143,11 @@ nav {
   cursor: pointer;
 }
 
-.dropbtn button {
+.dropbtn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kanit", sans-serif;
   height: 100%;
   border: none;
   background-color: transparent;
@@ -153,7 +157,8 @@ nav {
   line-height: 1;
 }
 
-.dropbtn button:hover {
+.dropbtn a:hover,
+.dropbtn a:active {
   background: var(--grey);
   border-radius: 1rem;
   cursor: pointer;

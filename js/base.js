@@ -51,6 +51,7 @@
   });
 })();
 
+
 // initials language selector footer
 (function langSelectorInitials() {
   const initials = document.querySelector('.lang-sel-typo');
