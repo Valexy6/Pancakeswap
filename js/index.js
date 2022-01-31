@@ -13,7 +13,7 @@
   - modal per connect wallet
   V - cambio iniziali con selettore lingua
   V - sticky menu
-  - bold per pagina selezionata
+  V - bold per pagina selezionata
 */
 
 
