@@ -20,6 +20,11 @@
     
 }
 
+.farmcontainer > .h4 {
+    position: relative;
+  bottom: 30px;
+}
+
 .sortFakeContainer {
     cursor: pointer;
     width: 10rem; /* width change to 100% when in his layout div */
@@ -48,7 +53,7 @@
      display: inline-flex;
      position: relative;
      margin-left: 750px;
-     bottom: 100px;
+     bottom: 130px;
  }
 .buttonSmall {
     display: inline-flex;
