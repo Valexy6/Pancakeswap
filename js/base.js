@@ -2,19 +2,19 @@
 (function navLinkStatus() {
   console.log(window.location.pathname.replace(/\//g, ''))
   const url = window.location.pathname.replace(/\//g, '');
-  const navLinks = document.querySelectorAll('.navlink')
+  const navLinks = document.querySelectorAll('[data-link]')
 
   switch (url) {
     case 'index.html':
       navLinks.forEach(navLink => {
-        navLink.classList.remove('navlink-bold');
+        navLink.setAttribute('data-link', 'navlink');
       });   
       break;
 
     case 'trade-exchange.html':
       navLinks.forEach(navLink => {
         if(navLink.textContent == 'Trade' || navLink.textContent == 'Exchange') {
-          navLink.classList.add('navlink-bold');
+          navLink.setAttribute('data-link', 'navlink-bold');
         }
       });
       break;
@@ -22,7 +22,7 @@
     case 'trade-liquidity.html':
       navLinks.forEach(navLink => {
         if(navLink.textContent == 'Trade' || navLink.textContent == 'Liquidity') {
-          navLink.classList.add('navlink-bold');
+          navLink.setAttribute('data-link', 'navlink-bold');
         }
       });
       break;
