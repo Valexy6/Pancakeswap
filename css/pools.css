@@ -27,7 +27,7 @@
 
 .sortFakeContainer {
     cursor: pointer;
-    width: 10rem; /* width change to 100% when in his layout div */
+    width: 10rem;
     height: 40px;
     position: relative;
     background-color:  rgb(238, 234, 244);;
@@ -39,7 +39,7 @@
     font-size: 1rem;
     font-weight: 400;
     font-family: "Kanit", sans-serif;
-    left: 490px;
+    /* left: 490px; */
 }
 
 
