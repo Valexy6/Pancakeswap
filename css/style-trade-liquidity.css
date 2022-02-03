@@ -1,3 +1,19 @@
+:root {
+  --hover-color: rgb(31, 199, 212, 065);
+  --active-color: rgb(31, 199, 212, 0.85);
+  --yellow: rgb(255, 178, 55);
+  --white: rgb(250, 249, 250);
+  --purple: rgb(118, 69, 217);
+  --dark-purple: rgb(40, 13, 95);
+  --light-purple: rgb(122, 110, 170);
+  --cyan: rgb(31, 199, 212);
+  --grey: rgb(239, 244, 245);
+  --grey-border: rgb(231, 227, 235);
+  --fuksia: rgb(237, 75, 158);
+  --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+  --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+}
+
 /* -- UTILITIES -- */
 .no-style-button {
   border: none;
