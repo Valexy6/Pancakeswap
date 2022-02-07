@@ -1,5 +1,5 @@
 :root {
-  --hover-color: rgb(31, 199, 212, 0.65);
+  --hover-color: rgb(31, 199, 212, 065);
   --active-color: rgb(31, 199, 212, 0.85);
   --yellow: rgb(255, 178, 55);
   --white: rgb(250, 249, 250);
@@ -12,298 +12,6 @@
   --fuksia: rgb(237, 75, 158);
   --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
   --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
-}
-
-
-/* -- GENERIC -- */
-* {
-  text-decoration: none;
-  font-family: 'Kanit', sans-serif;
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
-/* -- SCROLL BAR --*/
-/* width */
-::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: rgb(238 234 244) 0px 0px 5px inset;
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--light-purple);
-  border-radius: 0.5rem;
-}
-
-/* -- NAVBAR -- */
-/* -- logo -- */
-/* eyes animation */
-.logo-container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.logo-container:hover .left-eye,
-.logo-container:hover .right-eye {
-  transform-origin: center 60%;
-  animation-name: eyes;
-  animation-duration: 350ms;
-  animation-iteration-count: 1;
-}
-
-@keyframes eyes {
-
-  0%,
-  100% {
-      transform: scaleY(1);
-  }
-
-  50% {
-      transform: scaleY(0.1);
-  }
-}
-
-/* logo desktop */
-.desktop-logo {
-  width: 160px;
-}
-
-/* logo mobile */
-.mobile-logo {
-  width: 32px;
-}
-
-
-/* -- nav link -- */
-nav {
-  background-color: white;
-  /*da rimuovere*/
-  border-bottom: 1px solid var(--grey-border);
-  height: 3.5rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 1rem;
-}
-
-/* header left */
-.header-left {
-  display: flex;
-  height: 100%
-}
-
-/* link */
-.navlink-left {
-  display: flex;
-  position: relative;
-  margin-left: 1.5rem;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropbtn {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  cursor: pointer;
-}
-
-.dropbtn button {
-  height: 100%;
-  border: none;
-  background-color: transparent;
-  color: var(--light-purple);
-  font-size: 1rem;
-  font-weight: 400;
-  padding: 0px 1rem;
-  line-height: 1;
-}
-
-.dropbtn button:hover {
-  background: var(--grey);
-  border-radius: 1rem;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  border: 1px solid var(--grey-border);
-  border-radius: 1rem;
-  padding: 0.25rem 0px;
-  width: 17.5rem;
-  z-index: 10;
-  overflow: hidden;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 3rem;
-  color: var(--light-purple);
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  white-space: nowrap;
-  padding: 0px 1rem;
-}
-
-.dropdown-content a:hover {
-  background-color: var(--grey);
-}
-
-.dropdown-content a:active {
-  color: var(--purple);
-  opacity: 0.85;
-  transform: translateY(1px);
-}
-
-.dropdown-content a:link {
-  color: var(--light-purple);
-}
-
-.dropdown-content a:visited {
-  color: var(--light-purple);
-}
-
-.dropdown-content hr {
-  border-color: var(--grey-border);
-  border-style: solid;
-  border-width: 1px 0px 0px;
-  margin: 0.25rem 0px;
-}
-
-.header-right {
-  display: flex;
-}
-
-
-/* -- nav right -- */
-.header-right {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.pancakes-link {
-  margin-right: 0.75rem;
-}
-
-.pancakes-link a {
-  display: flex;
-  align-items: center;
-  font-family: "Kanit", sans-serif;
-  font-weight: 600;
-  color: var(--light-purple);
-}
-
-.pancakes-link img {
-  margin-right: 0.5rem;
-  transition: transform 0.3s ease 0s;
-}
-
-.pancakes-link:hover img {
-  transform: scale(1.2);
-}
-
-.language-container {
-  position: relative;
-  height: 100%;
-  padding: 0px 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.lang-selector {
-  display: none;
-  position: absolute;
-  width: max-content;
-  max-height: 400px;
-  padding: 1rem;
-  z-index: 99;
-  border-radius: 4px;
-  box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
-  background-color: white;
-  overflow-y: auto;
-  transform: translate(-50%, 0px);
-  left: 50%;
-}
-
-.language-container:hover .lang-selector {
-  display: block;
-}
-
-.lang {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: var(--dark-purple);
-  padding: 0px 0.5rem;
-  border-radius: 8px;
-  width: 100%;
-  min-height: 32px;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.lang:hover {
-  opacity: 0.65;
-}
-
-.setting {
-  margin-right: 0.75rem;
-  margin-left: 0.25rem;
-}
-
-.button-wallet {
-  display: flex;
-  align-items: center;
-  border-radius: 1rem;
-  border: 0px;
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: var(--cyan);
-  color: white;
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: pointer;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  height: 32px;
-  padding: 0px 1rem;
-  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  white-space: nowrap;
-}
-
-.button-wallet:hover {
-  background-color: var(--hover-color);
-}
-
-.button-wallet:active {
-  background-color: var(--active-color);
-  transform: translateY(1px);
-  box-shadow: none;
 }
 
 /* -- UTILITIES -- */
@@ -377,7 +85,7 @@ nav {
   align-items: center;
   color: var(--light-purple);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   padding: 4px 4px 0px;
   height: 42px;
   text-decoration: none;
@@ -894,4 +602,31 @@ footer {
 
 .f-row3>div:last-child img {
   margin-left: 8px;
+}
+
+/* -- RESOPNSIVE -- */
+@media screen and (min-width: 967px) {
+  .mobile-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  .desktop-logo {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .button-wallet {
+    white-space: pre-wrap;
+  }
+
+  .navlink-left {
+    display: none;
+  }
+
+  .pancakes-link{
+    display: none;
+  }
 }
